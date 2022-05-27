@@ -1,0 +1,628 @@
+//imports
+
+@import "utilities/variables";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- estruturando header ---------------------*/
+
+header {
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    filter: brightness(80%);
+    display: grid;
+    background-color: $cNegro;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "menuu cab menu"
+        "lema lema lema"
+        "lemd lemd lemd";
+        
+
+    .menuUno {
+        grid-area: menuu;
+        color: $colorLetra;
+
+        .oculto{
+            display: none;
+        }
+
+        nav {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-evenly;
+                
+
+                li {
+                    
+                    padding-top: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $colorLetra;
+                        font-size: 18px;
+                    }
+
+                    a:hover {
+                        color: salmon;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .cabanias {
+        grid-area: cab;
+        color: $colorLetra;
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+        font-family: 'Merriweather', serif;
+
+        h3 {
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .menuDos {
+        grid-area: menu;
+        color: $colorLetra;
+
+        nav {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-evenly;
+                color: $colorLetra;
+
+                li {
+                    
+                    padding-top: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $colorLetra;
+                        font-size: 18px;
+                    }
+
+                    a:hover {
+                        color: salmon;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .lema {
+        grid-area: lema;
+        color: $colorLetra;
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+
+        h2 {
+            font-size: 15px;
+            color: salmon;
+
+        }
+
+        h5 {
+            font-size: 15px;
+        }
+
+        h6 {
+            font-size: 15px;
+            color: salmon;
+        }
+    }
+
+    .lemaDos {
+        grid-area: lemd;
+        color: $colorLetra;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+
+        h2 {
+            font-size: 70px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+.somos {
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    h3 {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        font-size: 35px;
+        border-top: 3px double salmon;
+        border-left: 3px double salmon;
+        width: 100%;
+
+        span {
+            color: salmon;
+        }
+
+    }
+
+    p {
+        font-size: 20px;
+        border-bottom: 3px double salmon;
+        border-right: 3px double salmon;
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+
+/* estructuracion del main */
+
+main {
+    padding: 30px 100px 20px 100px;
+
+
+    .galeria-container {
+
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 350px;
+        gap: 10px;
+        border-top: 3px solid salmon;
+        border-left: 3px solid salmon;
+
+
+
+        .galeria-item:nth-child(4) {
+            grid-column-start: span 2;
+
+        }
+
+        .galeria-item:nth-child(5) {
+            grid-row-start: span 2;
+
+        }
+
+        .galeria-item:nth-child(9) {
+            grid-column-start: span 2;
+
+        }
+
+        .galeria-img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+
+        }
+
+    }
+}
+
+/* estructuracion de footer */
+
+footer {
+    height: 100%;
+    display: flex;
+    background-color: $cNegro;
+    color: salmon;
+    padding: 20px;
+    font-size: 20px;
+    column-gap: 200px;
+    justify-content: center;
+
+    .informacion {
+
+        .inf {
+            font-size: 25px;
+        }
+
+        .dir {
+            font-size: 15px;
+        }
+
+        .tel {
+            font-size: 15px;
+        }
+
+        .email {
+            font-size: 15px;
+        }
+    }
+
+    .horarios{
+
+        h4{
+            font-size: 25px;
+        }
+
+        h5{
+            font-size: 15px;
+
+            span{
+                display: block;
+            }
+        }
+
+        h6{
+            font-size: 15px;
+
+            span{
+                display: block;
+            }
+        }
+    }
+
+}
+
+
+/* MEDIA QUERY*/ 
+
+@media screen and (max-width: 1024px){
+
+    
+
+    main{
+
+        .galeria-container{        
+        
+        grid-auto-rows: 200px;
+        gap: 10px;
+        }
+
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+
+    header{
+
+        .lemaDos{
+            
+            h2{
+                font-size: 50px;
+            }
+        }
+        .menuUno{ 
+            
+            .oculto{
+                display: block;
+            }
+
+            nav{
+
+                ul{
+                    display: none;
+                }
+            }
+            
+
+        }
+
+        .menuDos{
+
+            nav{
+
+                ul{
+                    display: none;
+                }
+            }
+            
+
+        }
+
+    }
+
+    main{
+
+        .galeria-container{        
+        
+            grid-auto-rows: 100px;
+            gap: 10px;
+            }
+    }
+
+    footer{
+        gap: 70px;
+        padding-bottom: 10px;
+
+        .informacion{
+
+            .inf{
+                font-size: 15px;
+            }
+
+            .dir{
+                font-size: 10px;
+            }
+
+            .tel{
+                font-size: 10px;
+            }
+
+            .email{
+                font-size: 10px;
+            }
+        }
+
+        .horarios{
+            h4{
+                font-size: 15px;
+            }
+
+            h5{
+                font-size: 10px;
+            }
+
+            h6{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .somos{
+        h3{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+    }
+    
+}
+
+
+
+
+/* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */ 
+
+/* section descripcion*/ 
+
+header{
+    .cabanias{
+        .tit{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        h3{
+            padding: 0;
+        }
+    }
+}
+
+.descripcion{
+    padding: 0px 150px 10px;
+    text-align: center;
+}
+
+
+.mainHospedaje{
+    display: flex;
+    flex-direction: column;
+
+.cardUno{
+    display: flex;
+    column-gap: 20px;
+
+    .infoUno{
+
+        h3{
+            text-align: center;
+            span{
+                color: salmon;
+            }
+        }
+
+        p{
+            text-align: center;
+        }
+
+        
+    }
+
+    .imgCabu{
+
+        #carouselExampleFade{
+
+            .carousel-inner{
+
+                .carousel-item{
+                    height: 20rem;
+                    width: 40rem;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+        
+    }
+
+
+}
+
+.cardDos{
+    display: flex;
+    column-gap: 20px;
+
+    .infoDos{
+        h3{
+            text-align: center;
+            span{
+                color: salmon;
+            }
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .imgCabd{
+        
+        #carouselExampleFade{
+
+            .carousel-inner{
+
+                .carousel-item{
+
+                    height: 20rem;
+                    width: 40rem;
+                    background-position: center;
+                    background-size: cover;
+
+                }
+
+            }
+
+        }
+        
+
+    }
+}
+
+.cardTres{
+    display: flex;
+    column-gap: 20px;
+
+    .infoTres{
+        h3{
+            text-align: center;
+            span{
+                color: salmon;
+            }
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .imgCabt{
+
+        #carouselExampleFade{
+
+            .carousel-inner{
+
+                .carousel-item{
+
+                    height: 20rem;
+                    width: 40rem;
+                    background-position: center;
+                    background-size: cover;
+
+                }
+
+            }
+
+        }
+        // width: 80%;
+        // height: 20%;
+
+        // img{
+        //     width: 100%;
+        //     height: 100%;
+        //     object-fit: cover;
+        // }
+        
+    }
+}
+
+}
+
+/* MEDIA QUERY */ 
+
+@media screen and (max-width: 1000px) {
+
+    .mainHospedaje{
+
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: repeat(6, 1fr);
+
+        // grid-template-areas: "cab1"
+        //                      "inf1"
+        //                      "cab2"
+        //                      "inf2"
+        //                      "cab3"
+        //                      "inf3"                            
+        //                      ;
+
+
+        .cardUno{
+            flex-direction: column;
+
+            .imgCabu{
+
+                #carouselExampleFade{
+
+                    .carousel-inner{
+                        
+        
+                        .carousel-item{
+        
+                            height: 20rem;
+                            width: 40rem;
+                            background-position: center;
+                            background-size: cover;
+        
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+
+        .cardDos{            
+            flex-direction: column-reverse;
+
+            .imgCabd{
+
+                #carouselExampleFade{
+
+                    .carousel-inner{
+                        
+        
+                        .carousel-item{
+        
+                            height: 20rem;
+                            width: 40rem;
+                            background-position: center;
+                            background-size: cover;
+        
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+
+        .cardTres{
+            flex-direction: column;
+        }
+        
+
+    }
+    
+}
