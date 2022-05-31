@@ -130,27 +130,33 @@ footer {
   height: 100%;
   display: flex;
   background-color: #000;
-  color: salmon;
   padding: 20px;
   font-size: 20px;
   column-gap: 200px;
   justify-content: center; }
   footer .informacion .inf {
-    font-size: 25px; }
+    font-size: 25px;
+    color: salmon; }
   footer .informacion .dir {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #393737; }
   footer .informacion .tel {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #393737; }
   footer .informacion .email {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #393737; }
   footer .horarios h4 {
-    font-size: 25px; }
+    font-size: 25px;
+    color: salmon; }
   footer .horarios h5 {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #393737; }
     footer .horarios h5 span {
       display: block; }
   footer .horarios h6 {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #393737; }
     footer .horarios h6 span {
       display: block; }
 
@@ -271,3 +277,12 @@ header .cabanias h3 {
       background-size: cover; }
   .mainHospedaje .cardTres {
     flex-direction: column; } }
+
+/* ----------------***********  MENU  *********-----------------*/
+.mainMenu {
+  display: flex;
+  flex-direction: column; }
+  .mainMenu .menuComUno {
+    display: flex; }
+  .mainMenu .menuComDos {
+    display: flex; }

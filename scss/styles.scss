@@ -221,8 +221,7 @@ main {
 footer {
     height: 100%;
     display: flex;
-    background-color: $cNegro;
-    color: salmon;
+    background-color: $cNegro;    
     padding: 20px;
     font-size: 20px;
     column-gap: 200px;
@@ -232,18 +231,22 @@ footer {
 
         .inf {
             font-size: 25px;
+            color: salmon;
         }
 
         .dir {
             font-size: 15px;
+            color: rgb(57, 55, 55);
         }
 
         .tel {
             font-size: 15px;
+            color: rgb(57, 55, 55);
         }
 
         .email {
             font-size: 15px;
+            color: rgb(57, 55, 55);
         }
     }
 
@@ -251,10 +254,12 @@ footer {
 
         h4{
             font-size: 25px;
+            color: salmon;
         }
 
         h5{
             font-size: 15px;
+            color: rgb(57, 55, 55);
 
             span{
                 display: block;
@@ -263,6 +268,7 @@ footer {
 
         h6{
             font-size: 15px;
+            color: rgb(57, 55, 55);
 
             span{
                 display: block;
@@ -625,4 +631,20 @@ header{
 
     }
     
+}
+
+
+/* ----------------***********  MENU  *********-----------------*/
+
+.mainMenu{
+    display: flex;
+    flex-direction: column;
+
+    .menuComUno{
+        display: flex;
+    }
+    
+    .menuComDos{
+        display: flex;
+    }
 }
