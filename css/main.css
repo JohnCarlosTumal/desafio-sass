@@ -56,7 +56,7 @@ header {
           text-decoration: none;
           color: #ffff;
           font-size: 18px; }
-        header .menuDos nav ul li a:hover {
+        header .menuDos nav ul li:hover {
           color: salmon;
           transform: scale(1.1); }
   header .lema {
@@ -283,6 +283,46 @@ header .cabanias h3 {
   display: flex;
   flex-direction: column; }
   .mainMenu .menuComUno {
-    display: flex; }
-  .mainMenu .menuComDos {
-    display: flex; }
+    display: flex;
+    column-gap: 200px;
+    padding: 50px; }
+    .mainMenu .menuComUno .comida1 {
+      height: 70vh;
+      width: 40%;
+      justify-content: center;
+      border: 2px solid red; }
+      .mainMenu .menuComUno .comida1 .imgComida1 {
+        width: 100%;
+        height: 40%;
+        padding: 0px 50px; }
+        .mainMenu .menuComUno .comida1 .imgComida1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill; }
+      .mainMenu .menuComUno .comida1 .infComida1 {
+        width: 100%;
+        height: 33%;
+        text-align: center;
+        background-color: salmon; }
+        .mainMenu .menuComUno .comida1 .infComida1 p {
+          text-align: justify; }
+      .mainMenu .menuComUno .comida1 .comprar {
+        width: 100%;
+        height: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+  .mainMenu .comida2 {
+    height: 100vh;
+    width: 50%;
+    border: 1px solid red; }
+    .mainMenu .comida2 .imgComida2 {
+      width: 100%;
+      height: 33%; }
+      .mainMenu .comida2 .imgComida2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.menuComDos {
+  display: flex; }
