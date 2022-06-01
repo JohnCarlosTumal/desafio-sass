@@ -281,48 +281,88 @@ header .cabanias h3 {
 /* ----------------***********  MENU  *********-----------------*/
 .mainMenu {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 10px 100px;
+  justify-content: space-evenly; }
   .mainMenu .menuComUno {
     display: flex;
-    column-gap: 200px;
-    padding: 50px; }
+    column-gap: 100px;
+    padding: 20px 70px; }
     .mainMenu .menuComUno .comida1 {
       height: 70vh;
       width: 40%;
       justify-content: center;
-      border: 2px solid red; }
+      border: 2px solid salmon;
+      box-shadow: 5px 5px 10px #464646; }
       .mainMenu .menuComUno .comida1 .imgComida1 {
         width: 100%;
-        height: 40%;
-        padding: 0px 50px; }
+        height: 40%; }
         .mainMenu .menuComUno .comida1 .imgComida1 img {
           width: 100%;
           height: 100%;
           object-fit: fill; }
       .mainMenu .menuComUno .comida1 .infComida1 {
         width: 100%;
-        height: 33%;
-        text-align: center;
-        background-color: salmon; }
+        height: 40%;
+        text-align: center; }
         .mainMenu .menuComUno .comida1 .infComida1 p {
           text-align: justify; }
       .mainMenu .menuComUno .comida1 .comprar {
         width: 100%;
-        height: 33%;
+        height: 20%;
         display: flex;
         justify-content: center;
         align-items: center; }
   .mainMenu .comida2 {
-    height: 100vh;
-    width: 50%;
-    border: 1px solid red; }
+    height: 70vh;
+    width: 40%;
+    border: 2px solid salmon;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #464646; }
     .mainMenu .comida2 .imgComida2 {
       width: 100%;
-      height: 33%; }
+      height: 40%; }
       .mainMenu .comida2 .imgComida2 img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+    .mainMenu .comida2 .infComida2 {
+      height: 40%;
+      width: 100%;
+      text-align: center; }
+      .mainMenu .comida2 .infComida2 p {
+        text-align: justify; }
+    .mainMenu .comida2 .comprar2 {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .mainMenu .comida3 {
+    height: 70vh;
+    width: 40%;
+    justify-content: center;
+    border: 2px solid salmon;
+    box-shadow: 5px 5px 10px #464646; }
+    .mainMenu .comida3 .imgComida3 {
+      width: 100%;
+      height: 40%; }
+      .mainMenu .comida3 .imgComida3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; }
+    .mainMenu .comida3 .infComida3 {
+      width: 100%;
+      height: 40%;
+      text-align: center; }
+      .mainMenu .comida3 .infComida3 p {
+        text-align: justify; }
+    .mainMenu .comida3 .comprar3 {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .menuComDos {
   display: flex; }

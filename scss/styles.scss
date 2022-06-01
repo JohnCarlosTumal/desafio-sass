@@ -639,40 +639,43 @@ header{
 .mainMenu{
     display: flex;
     flex-direction: column;
+    padding: 10px 100px;
+    justify-content: space-evenly;
     
 
     .menuComUno{
         display: flex;
-        column-gap: 200px;
-        padding: 50px;
+        column-gap: 100px;
+        padding:  20px 70px;
         
 
         .comida1{
             height: 70vh;
             width: 40%;
             justify-content: center;
-            border: 2px solid red;
+            border: 2px solid salmon;
+            box-shadow: 5px 5px 10px rgb(70, 70, 70);
             
 
             .imgComida1{
                 width: 100%;
                 height: 40%;
-                padding: 0px 50px;
+                
                 
 
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit:fill;
+                    
                 }
             }
 
             .infComida1{
                 width: 100%;
-                height: 33%;
+                height: 40%;
                 text-align: center;
-                background-color: salmon;
-                
+                                
                 p{
                     text-align: justify;
                 }
@@ -680,7 +683,7 @@ header{
 
             .comprar{
                 width: 100%;
-                height: 33%;
+                height: 20%;
                 display: flex;                
                 justify-content: center;
                 align-items: center;
@@ -689,13 +692,16 @@ header{
         }
 
         .comida2{
-            height: 100vh;
-            width: 50%;
-            border: 1px solid red;
+            height: 70vh;
+            width: 40%;
+            border: 2px solid salmon;
+            justify-content: center;
+            box-shadow: 5px 5px 10px rgb(70, 70, 70);
 
             .imgComida2{
                 width: 100%;
-                height: 33%;
+                height: 40%;
+                
 
                 img{
                     width: 100%;
@@ -705,9 +711,69 @@ header{
                 }
                 
             }
+
+            .infComida2{
+                height: 40%;
+                width: 100%;
+                text-align: center;
+
+                p{
+                    text-align: justify;
+                }
+
+            }
+
+            .comprar2{
+                width: 100%;
+                height: 20%;
+                display: flex;                
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .comida3{
+            height: 70vh;
+            width: 40%;
+            justify-content: center;
+            border: 2px solid salmon;
+            box-shadow: 5px 5px 10px rgb(70, 70, 70);
+            
+
+            .imgComida3{
+                width: 100%;
+                height: 40%;
+              
+                
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit:fill;
+                }
+            }
+
+            .infComida3{
+                width: 100%;
+                height: 40%;
+                text-align: center;
+                                
+                p{
+                    text-align: justify;
+                }
+            }
+
+            .comprar3{
+                width: 100%;
+                height: 20%;
+                display: flex;                
+                justify-content: center;
+                align-items: center;
+                }
+            }            
         }
         
-    }
+    
     
     .menuComDos{
         display: flex;
