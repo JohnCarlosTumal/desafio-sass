@@ -279,6 +279,9 @@ header .cabanias h3 {
     flex-direction: column; } }
 
 /* ----------------***********  MENU  *********-----------------*/
+.subMenu {
+  color: salmon; }
+
 .mainMenu {
   display: flex;
   flex-direction: column;
