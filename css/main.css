@@ -392,12 +392,27 @@ header .cabanias h3 {
   .mainHospedaje .cardTres {
     flex-direction: column; } }
 
+/* ********* ACTIVIDADES *********************** */
 .mainActi {
-  display: flex; }
+  display: flex;
+  column-gap: 30px; }
   .mainActi .cardPrimera {
-    justify-content: center; }
-    .mainActi .cardPrimera .card .card-img-top {
-      justify-content: center;
-      align-items: center; }
-    .mainActi .cardPrimera .descripcion1 h2 {
+    box-shadow: 5px 5px 10px black; }
+    .mainActi .cardPrimera .actiUno {
+      width: 100%;
+      height: 70%; }
+      .mainActi .cardPrimera .actiUno img {
+        width: 100%;
+        height: 100%; }
+    .mainActi .cardPrimera .descripcion1 {
+      text-align: center; }
+  .mainActi .cardSegunda {
+    box-shadow: 5px 5px 10px black; }
+    .mainActi .cardSegunda .actiDos {
+      width: 100%;
+      height: 70%; }
+      .mainActi .cardSegunda .actiDos img {
+        width: 100%;
+        height: 100%; }
+    .mainActi .cardSegunda .descripcion2 {
       text-align: center; }

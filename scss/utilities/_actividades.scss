@@ -1,25 +1,51 @@
+/* ********* ACTIVIDADES *********************** */
+
+
 .mainActi{
-
     display: flex;
-    .cardPrimera{
-        justify-content: center;
+    column-gap: 30px;
+    
 
-        .card{
-            
+    .cardPrimera{     
+        box-shadow: 5px 5px 10px black;  
+        
 
-            .card-img-top{
-                justify-content: center;
-                align-items: center;
+        .actiUno{
+            width: 100%;
+            height: 70%;
+
+            img{
+                width: 100%;
+                height: 100%;
             }
-
         }
 
         .descripcion1{
-            
-            h2{
-                text-align: center;
-            }
+            text-align: center;
         }
     }
+
+    .cardSegunda{
+        box-shadow: 5px 5px 10px black; 
+        
+        .actiDos{
+            width: 100%;
+            height: 70%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .descripcion2{
+            text-align: center;
+        }
+        
+        
+        
+    }
+
+  
 
 }
