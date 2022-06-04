@@ -1,3 +1,5 @@
+/* ---------------- estruturando header ---------------------*/
+
 header {
     height: 100vh;
     background-image: url(../img/fondo.jpg);
@@ -35,12 +37,14 @@ header {
                         color: $colorLetra;
                         font-size: 18px;
                         filter: brightness(100%);
+
+                        &:hover{
+                            color: salmon;
+                            transform: scale(1.1);
+                        }
                     }
 
-                    &:hover{
-                        color: salmon;
-                        transform: scale(1.1);
-                    }
+                    
                 }
             }
         }
@@ -79,12 +83,14 @@ header {
                         text-decoration: none;
                         color: $colorLetra;
                         font-size: 18px;
+
+                        &:hover {
+                            color: salmon;
+                            transform: scale(1.1);
+                        }
                     }
 
-                    &:hover {
-                        color: salmon;
-                        transform: scale(1.1);
-                    }
+                    
                 }
             }
         }

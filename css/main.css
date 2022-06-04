@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* ---------------- estruturando header ---------------------*/
 header {
   height: 100vh;
   background-image: url(../img/fondo.jpg);
@@ -29,9 +30,9 @@ header {
           color: white;
           font-size: 18px;
           filter: brightness(100%); }
-        header .menuUno nav ul li:hover {
-          color: salmon;
-          transform: scale(1.1); }
+          header .menuUno nav ul li a:hover {
+            color: salmon;
+            transform: scale(1.1); }
   header .cabanias {
     grid-area: cab;
     color: white;
@@ -56,9 +57,9 @@ header {
           text-decoration: none;
           color: white;
           font-size: 18px; }
-        header .menuDos nav ul li:hover {
-          color: salmon;
-          transform: scale(1.1); }
+          header .menuDos nav ul li a:hover {
+            color: salmon;
+            transform: scale(1.1); }
   header .lema {
     grid-area: lema;
     color: white;
@@ -200,7 +201,119 @@ footer {
   .somos p {
     font-size: 15px; } }
 
-/* ---------------- estruturando header ---------------------*/
+/* ----------------***********  MENU  *********-----------------*/
+.subMenu {
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+  .subMenu nav {
+    padding: 10px; }
+    .subMenu nav ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      column-gap: 25px; }
+      .subMenu nav ul li {
+        text-align: center; }
+        .subMenu nav ul li a {
+          text-decoration: none;
+          color: #ec6455;
+          font-size: 20px;
+          font-weight: 40px; }
+          .subMenu nav ul li a:hover {
+            font-size: 18px;
+            text-decoration: underline; }
+
+.mainMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+  justify-content: space-evenly; }
+  .mainMenu .menuComUno {
+    display: flex;
+    column-gap: 100px;
+    padding: 20px 70px; }
+    .mainMenu .menuComUno .comida1 {
+      height: 70vh;
+      width: 40%;
+      justify-content: center;
+      border: 2px solid salmon;
+      box-shadow: 5px 5px 10px #464646; }
+      .mainMenu .menuComUno .comida1:hover {
+        transform: scale(1.01); }
+      .mainMenu .menuComUno .comida1 .imgComida1 {
+        width: 100%;
+        height: 40%; }
+        .mainMenu .menuComUno .comida1 .imgComida1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill; }
+      .mainMenu .menuComUno .comida1 .infComida1 {
+        width: 100%;
+        height: 40%;
+        text-align: center; }
+        .mainMenu .menuComUno .comida1 .infComida1 p {
+          text-align: justify; }
+      .mainMenu .menuComUno .comida1 .comprar {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+  .mainMenu .comida2 {
+    height: 70vh;
+    width: 40%;
+    border: 2px solid salmon;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #464646; }
+    .mainMenu .comida2 .imgComida2 {
+      width: 100%;
+      height: 40%; }
+      .mainMenu .comida2 .imgComida2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .mainMenu .comida2 .infComida2 {
+      height: 40%;
+      width: 100%;
+      text-align: center; }
+      .mainMenu .comida2 .infComida2 p {
+        text-align: justify; }
+    .mainMenu .comida2 .comprar2 {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .mainMenu .comida3 {
+    height: 70vh;
+    width: 40%;
+    justify-content: center;
+    border: 2px solid salmon;
+    box-shadow: 5px 5px 10px #464646; }
+    .mainMenu .comida3 .imgComida3 {
+      width: 100%;
+      height: 40%; }
+      .mainMenu .comida3 .imgComida3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; }
+    .mainMenu .comida3 .infComida3 {
+      width: 100%;
+      height: 40%;
+      text-align: center; }
+      .mainMenu .comida3 .infComida3 p {
+        text-align: justify; }
+    .mainMenu .comida3 .comprar3 {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+.menuComDos {
+  display: flex; }
+
 /* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */
 /* section descripcion*/
 header .cabanias .tit {
@@ -278,95 +391,3 @@ header .cabanias h3 {
       background-size: cover; }
   .mainHospedaje .cardTres {
     flex-direction: column; } }
-
-/* ----------------***********  MENU  *********-----------------*/
-.subMenu {
-  color: salmon; }
-
-.mainMenu {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 100px;
-  justify-content: space-evenly; }
-  .mainMenu .menuComUno {
-    display: flex;
-    column-gap: 100px;
-    padding: 20px 70px; }
-    .mainMenu .menuComUno .comida1 {
-      height: 70vh;
-      width: 40%;
-      justify-content: center;
-      border: 2px solid salmon;
-      box-shadow: 5px 5px 10px #464646; }
-      .mainMenu .menuComUno .comida1 .imgComida1 {
-        width: 100%;
-        height: 40%; }
-        .mainMenu .menuComUno .comida1 .imgComida1 img {
-          width: 100%;
-          height: 100%;
-          object-fit: fill; }
-      .mainMenu .menuComUno .comida1 .infComida1 {
-        width: 100%;
-        height: 40%;
-        text-align: center; }
-        .mainMenu .menuComUno .comida1 .infComida1 p {
-          text-align: justify; }
-      .mainMenu .menuComUno .comida1 .comprar {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-  .mainMenu .comida2 {
-    height: 70vh;
-    width: 40%;
-    border: 2px solid salmon;
-    justify-content: center;
-    box-shadow: 5px 5px 10px #464646; }
-    .mainMenu .comida2 .imgComida2 {
-      width: 100%;
-      height: 40%; }
-      .mainMenu .comida2 .imgComida2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .mainMenu .comida2 .infComida2 {
-      height: 40%;
-      width: 100%;
-      text-align: center; }
-      .mainMenu .comida2 .infComida2 p {
-        text-align: justify; }
-    .mainMenu .comida2 .comprar2 {
-      width: 100%;
-      height: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-  .mainMenu .comida3 {
-    height: 70vh;
-    width: 40%;
-    justify-content: center;
-    border: 2px solid salmon;
-    box-shadow: 5px 5px 10px #464646; }
-    .mainMenu .comida3 .imgComida3 {
-      width: 100%;
-      height: 40%; }
-      .mainMenu .comida3 .imgComida3 img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill; }
-    .mainMenu .comida3 .infComida3 {
-      width: 100%;
-      height: 40%;
-      text-align: center; }
-      .mainMenu .comida3 .infComida3 p {
-        text-align: justify; }
-    .mainMenu .comida3 .comprar3 {
-      width: 100%;
-      height: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-
-.menuComDos {
-  display: flex; }
