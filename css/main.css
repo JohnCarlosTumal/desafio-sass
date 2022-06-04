@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* ---------------- estruturando header ---------------------*/
 header {
   height: 100vh;
   background-image: url(../img/fondo.jpg);
@@ -16,7 +15,7 @@ header {
   grid-template-areas: "menuu cab menu" "lema lema lema" "lemd lemd lemd"; }
   header .menuUno {
     grid-area: menuu;
-    color: #ffff; }
+    color: white; }
     header .menuUno .oculto {
       display: none; }
     header .menuUno nav ul {
@@ -27,14 +26,15 @@ header {
         padding-top: 10px; }
         header .menuUno nav ul li a {
           text-decoration: none;
-          color: #ffff;
-          font-size: 18px; }
-        header .menuUno nav ul li a:hover {
+          color: white;
+          font-size: 18px;
+          filter: brightness(100%); }
+        header .menuUno nav ul li:hover {
           color: salmon;
           transform: scale(1.1); }
   header .cabanias {
     grid-area: cab;
-    color: #ffff;
+    color: white;
     font-size: 10px;
     text-align: center;
     margin-top: 10px;
@@ -44,24 +44,24 @@ header {
       font-weight: bold; }
   header .menuDos {
     grid-area: menu;
-    color: #ffff; }
+    color: white; }
     header .menuDos nav ul {
       list-style-type: none;
       display: flex;
       justify-content: space-evenly;
-      color: #ffff; }
+      color: white; }
       header .menuDos nav ul li {
         padding-top: 10px; }
         header .menuDos nav ul li a {
           text-decoration: none;
-          color: #ffff;
+          color: white;
           font-size: 18px; }
         header .menuDos nav ul li:hover {
           color: salmon;
           transform: scale(1.1); }
   header .lema {
     grid-area: lema;
-    color: #ffff;
+    color: white;
     justify-content: center;
     display: flex;
     align-items: flex-end; }
@@ -75,7 +75,7 @@ header {
       color: salmon; }
   header .lemaDos {
     grid-area: lemd;
-    color: #ffff;
+    color: white;
     text-align: center;
     font-family: 'Merriweather', serif; }
     header .lemaDos h2 {
@@ -200,6 +200,7 @@ footer {
   .somos p {
     font-size: 15px; } }
 
+/* ---------------- estruturando header ---------------------*/
 /* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */
 /* section descripcion*/
 header .cabanias .tit {
