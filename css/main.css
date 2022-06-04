@@ -391,3 +391,13 @@ header .cabanias h3 {
       background-size: cover; }
   .mainHospedaje .cardTres {
     flex-direction: column; } }
+
+.mainActi {
+  display: flex; }
+  .mainActi .cardPrimera {
+    justify-content: center; }
+    .mainActi .cardPrimera .card .card-img-top {
+      justify-content: center;
+      align-items: center; }
+    .mainActi .cardPrimera .descripcion1 h2 {
+      text-align: center; }

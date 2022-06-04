@@ -1,0 +1,25 @@
+.mainActi{
+
+    display: flex;
+    .cardPrimera{
+        justify-content: center;
+
+        .card{
+            
+
+            .card-img-top{
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        .descripcion1{
+            
+            h2{
+                text-align: center;
+            }
+        }
+    }
+
+}
