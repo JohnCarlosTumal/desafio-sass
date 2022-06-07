@@ -2,49 +2,63 @@
 
 
 .mainActi{
-    display: flex;
+    display: flex;    
     column-gap: 30px;
     
-
-    .cardPrimera{     
-        box-shadow: 5px 5px 10px black;  
+    
+    .sexUno{
         
 
-        .actiUno{
-            width: 100%;
-            height: 70%;
-
-            img{
+        .cardPrimera{     
+            box-shadow: -5px -5px 10px black, 5px 5px 10px black;
+            &:hover{
+                transform: scale(1.01);
+            }  
+            
+    
+            .actiUno{
                 width: 100%;
-                height: 100%;
+                height: 70%;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .descripcion1{
+                text-align: center;
             }
         }
-
-        .descripcion1{
-            text-align: center;
-        }
-    }
-
-    .cardSegunda{
-        box-shadow: 5px 5px 10px black; 
-        
-        .actiDos{
-            width: 100%;
-            height: 70%;
-
-            img{
-                width: 100%;
-                height: 100%;
+    
+        .cardSegunda{
+            box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+            &:hover{
+                transform: scale(1.01);
             }
+             
+            
+            .actiDos{
+                width: 100%;
+                height: 70%;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .descripcion2{
+                text-align: center;
+            }
+            
+            
+            
         }
 
-        .descripcion2{
-            text-align: center;
-        }
-        
-        
-        
     }
+
+    
 
   
 

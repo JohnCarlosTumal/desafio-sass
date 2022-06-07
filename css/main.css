@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
 * {
   margin: 0;
@@ -396,23 +397,46 @@ header .cabanias h3 {
 .mainActi {
   display: flex;
   column-gap: 30px; }
-  .mainActi .cardPrimera {
-    box-shadow: 5px 5px 10px black; }
-    .mainActi .cardPrimera .actiUno {
+  .mainActi .sexUno .cardPrimera {
+    box-shadow: -5px -5px 10px black, 5px 5px 10px black; }
+    .mainActi .sexUno .cardPrimera:hover {
+      transform: scale(1.01); }
+    .mainActi .sexUno .cardPrimera .actiUno {
       width: 100%;
       height: 70%; }
-      .mainActi .cardPrimera .actiUno img {
+      .mainActi .sexUno .cardPrimera .actiUno img {
         width: 100%;
         height: 100%; }
-    .mainActi .cardPrimera .descripcion1 {
+    .mainActi .sexUno .cardPrimera .descripcion1 {
       text-align: center; }
-  .mainActi .cardSegunda {
-    box-shadow: 5px 5px 10px black; }
-    .mainActi .cardSegunda .actiDos {
+  .mainActi .sexUno .cardSegunda {
+    box-shadow: 5px 5px 10px black, -5px -5px 10px black; }
+    .mainActi .sexUno .cardSegunda:hover {
+      transform: scale(1.01); }
+    .mainActi .sexUno .cardSegunda .actiDos {
       width: 100%;
       height: 70%; }
-      .mainActi .cardSegunda .actiDos img {
+      .mainActi .sexUno .cardSegunda .actiDos img {
         width: 100%;
         height: 100%; }
-    .mainActi .cardSegunda .descripcion2 {
+    .mainActi .sexUno .cardSegunda .descripcion2 {
       text-align: center; }
+
+/* diseño ubicacion*/
+.central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .central .deskUbicacion h2 {
+    text-align: center; }
+  .central .deskUbicacion p {
+    text-align: center; }
+  .central .imagenCinco {
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid #24ab38;
+    width: 60%;
+    height: 80vh; }
+    .central .imagenCinco iframe {
+      width: 100%;
+      height: 100%; }
