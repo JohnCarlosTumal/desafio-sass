@@ -8,13 +8,17 @@
     
     
     .deskUbicacion{
-        h2{
-            text-align: center;
-        }
 
-        p{
-            text-align: center;
-        }
+        @include textoCentrado;
+
+        // text-align: center;
+        // h2{
+        //     text-align: center;
+        // }
+
+        // p{
+        //     text-align: center;
+        // }
     }
 
     .imagenCinco{

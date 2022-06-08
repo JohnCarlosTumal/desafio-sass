@@ -6,14 +6,19 @@
 }
 
 // IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 @import "utilities/variables";
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
-@import "utilities/index";
-@import "utilities/menu";
-@import "utilities/hospedale";
-@import "utilities/actividades";
-@import "utilities/ubicacion";
+@import "utilities/mixins";
+
+
+@import "index";
+@import "menu";
+@import "hospedale";
+@import "actividades";
+@import "ubicacion";
+
 
 
 
