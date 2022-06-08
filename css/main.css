@@ -236,86 +236,45 @@ footer {
     display: flex;
     column-gap: 100px;
     padding: 20px 70px; }
-    .mainMenu .menuComUno .comida1 {
+    .mainMenu .menuComUno .comida1, .mainMenu .menuComUno .comida2, .mainMenu .menuComUno .comida3 {
       height: 70vh;
       width: 40%;
       justify-content: center;
       border: 2px solid salmon;
       box-shadow: 5px 5px 10px #464646; }
-      .mainMenu .menuComUno .comida1:hover {
+      .mainMenu .menuComUno .comida1:hover, .mainMenu .menuComUno .comida2:hover, .mainMenu .menuComUno .comida3:hover {
         transform: scale(1.01); }
-      .mainMenu .menuComUno .comida1 .imgComida1 {
+      .mainMenu .menuComUno .comida1 .imgComida1, .mainMenu .menuComUno .comida2 .imgComida1, .mainMenu .menuComUno .comida3 .imgComida1, .mainMenu .comida2 .menuComUno .comida1 .imgComida2, .mainMenu .menuComUno .comida2 .imgComida2, .mainMenu .comida2 .menuComUno .comida3 .imgComida2, .mainMenu .comida3 .menuComUno .comida1 .imgComida3, .mainMenu .comida3 .menuComUno .comida2 .imgComida3, .mainMenu .menuComUno .comida3 .imgComida3 {
         width: 100%;
         height: 40%; }
-        .mainMenu .menuComUno .comida1 .imgComida1 img {
+        .mainMenu .menuComUno .comida1 .imgComida1 img, .mainMenu .menuComUno .comida2 .imgComida1 img, .mainMenu .menuComUno .comida3 .imgComida1 img, .mainMenu .comida2 .menuComUno .comida1 .imgComida2 img, .mainMenu .menuComUno .comida2 .imgComida2 img, .mainMenu .comida2 .menuComUno .comida3 .imgComida2 img, .mainMenu .comida3 .menuComUno .comida1 .imgComida3 img, .mainMenu .comida3 .menuComUno .comida2 .imgComida3 img, .mainMenu .menuComUno .comida3 .imgComida3 img {
           width: 100%;
           height: 100%;
           object-fit: fill; }
-      .mainMenu .menuComUno .comida1 .infComida1 {
+      .mainMenu .menuComUno .comida1 .infComida1, .mainMenu .menuComUno .comida2 .infComida1, .mainMenu .menuComUno .comida3 .infComida1, .mainMenu .comida2 .menuComUno .comida1 .infComida2, .mainMenu .menuComUno .comida2 .infComida2, .mainMenu .comida2 .menuComUno .comida3 .infComida2, .mainMenu .comida3 .menuComUno .comida1 .infComida3, .mainMenu .comida3 .menuComUno .comida2 .infComida3, .mainMenu .menuComUno .comida3 .infComida3 {
         width: 100%;
         height: 40%;
         text-align: center; }
-        .mainMenu .menuComUno .comida1 .infComida1 p {
+        .mainMenu .menuComUno .comida1 .infComida1 p, .mainMenu .menuComUno .comida2 .infComida1 p, .mainMenu .menuComUno .comida3 .infComida1 p, .mainMenu .comida2 .menuComUno .comida1 .infComida2 p, .mainMenu .menuComUno .comida2 .infComida2 p, .mainMenu .comida2 .menuComUno .comida3 .infComida2 p, .mainMenu .comida3 .menuComUno .comida1 .infComida3 p, .mainMenu .comida3 .menuComUno .comida2 .infComida3 p, .mainMenu .menuComUno .comida3 .infComida3 p {
           text-align: justify; }
-      .mainMenu .menuComUno .comida1 .comprar {
+      .mainMenu .menuComUno .comida1 .comprar, .mainMenu .menuComUno .comida2 .comprar, .mainMenu .menuComUno .comida3 .comprar, .mainMenu .comida2 .menuComUno .comida1 .comprar2, .mainMenu .menuComUno .comida2 .comprar2, .mainMenu .comida2 .menuComUno .comida3 .comprar2, .mainMenu .comida3 .menuComUno .comida1 .comprar3, .mainMenu .comida3 .menuComUno .comida2 .comprar3, .mainMenu .menuComUno .comida3 .comprar3 {
         width: 100%;
         height: 20%;
         display: flex;
         justify-content: center;
         align-items: center; }
-  .mainMenu .comida2 {
-    height: 70vh;
-    width: 40%;
-    border: 2px solid salmon;
-    justify-content: center;
-    box-shadow: 5px 5px 10px #464646; }
-    .mainMenu .comida2 .imgComida2 {
-      width: 100%;
-      height: 40%; }
-      .mainMenu .comida2 .imgComida2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .mainMenu .comida2 .infComida2 {
-      height: 40%;
-      width: 100%;
-      text-align: center; }
-      .mainMenu .comida2 .infComida2 p {
-        text-align: justify; }
-    .mainMenu .comida2 .comprar2 {
-      width: 100%;
-      height: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-  .mainMenu .comida3 {
-    height: 70vh;
-    width: 40%;
-    justify-content: center;
-    border: 2px solid salmon;
-    box-shadow: 5px 5px 10px #464646; }
-    .mainMenu .comida3 .imgComida3 {
-      width: 100%;
-      height: 40%; }
-      .mainMenu .comida3 .imgComida3 img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill; }
-    .mainMenu .comida3 .infComida3 {
-      width: 100%;
-      height: 40%;
-      text-align: center; }
-      .mainMenu .comida3 .infComida3 p {
-        text-align: justify; }
-    .mainMenu .comida3 .comprar3 {
-      width: 100%;
-      height: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-
-.menuComDos {
-  display: flex; }
+  .mainMenu .comida2 .imgComida2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .mainMenu .comida2 .infComida2 p {
+    text-align: justify; }
+  .mainMenu .comida3 .imgComida3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; }
+  .mainMenu .comida3 .infComida3 p {
+    text-align: justify; }
 
 /* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */
 /* section descripcion*/
