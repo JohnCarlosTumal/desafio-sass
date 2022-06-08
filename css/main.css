@@ -276,6 +276,22 @@ footer {
   .mainMenu .comida3 .infComida3 p {
     text-align: justify; }
 
+/* ----------------------- MEDIA QUERYS -------------------*/
+@media screen and (max-width: 800px) {
+  .mainMenu .menuComUno {
+    column-gap: 10px;
+    padding: 10PX 10px; }
+    .mainMenu .menuComUno .comida1, .mainMenu .menuComUno .comida2, .mainMenu .menuComUno .comida3 {
+      height: 50vh;
+      width: 40%;
+      justify-content: center;
+      border: 2px solid salmon;
+      box-shadow: 5px 5px 10px #464646; }
+      .mainMenu .menuComUno .comida1 .infComida1 h2, .mainMenu .menuComUno .comida2 .infComida1 h2, .mainMenu .menuComUno .comida3 .infComida1 h2, .mainMenu .comida2 .menuComUno .comida1 .infComida2 h2, .mainMenu .menuComUno .comida2 .infComida2 h2, .mainMenu .comida2 .menuComUno .comida3 .infComida2 h2, .mainMenu .comida3 .menuComUno .comida1 .infComida3 h2, .mainMenu .comida3 .menuComUno .comida2 .infComida3 h2, .mainMenu .menuComUno .comida3 .infComida3 h2 {
+        font-size: 18px; }
+      .mainMenu .menuComUno .comida1 .infComida1 p, .mainMenu .menuComUno .comida2 .infComida1 p, .mainMenu .menuComUno .comida3 .infComida1 p, .mainMenu .comida2 .menuComUno .comida1 .infComida2 p, .mainMenu .menuComUno .comida2 .infComida2 p, .mainMenu .comida2 .menuComUno .comida3 .infComida2 p, .mainMenu .comida3 .menuComUno .comida1 .infComida3 p, .mainMenu .comida3 .menuComUno .comida2 .infComida3 p, .mainMenu .menuComUno .comida3 .infComida3 p {
+        font-size: 10px; } }
+
 /* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */
 /* section descripcion*/
 header .cabanias .tit {

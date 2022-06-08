@@ -153,7 +153,46 @@
                 }
             }            
         }
+
+
+
+        /* ----------------------- MEDIA QUERYS -------------------*/
         
-    
+
+        @media screen and (max-width: 800px){
+
+            .mainMenu{
+
+                .menuComUno{
+                    column-gap: 10px;
+                    padding: 10PX 10px;
+
+                    .comida1{
+                        height: 50vh;
+                        width: 40%;
+                        justify-content: center;
+                        border: 2px solid salmon;
+                        box-shadow: 5px 5px 10px rgb(70, 70, 70);
+
+
+                        .infComida1{
+
+                            h2{
+                                font-size: 18px;
+                            }
+
+                            p{
+                                font-size: 10px;
+                            }
+                        }
+            
+                }
+            }
+
+
+
+        }
+
+        }
     
     
