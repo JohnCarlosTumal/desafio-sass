@@ -1,38 +1,39 @@
 /* ----------------***********  MENU  *********-----------------*/
 
 
-.subMenu{
+.subMenu {
     height: 100%;
-    width: 100%;    
+    width: 100%;
     text-align: center;
-    
-    nav{
+
+    nav {
         padding: 10px;
-        ul{
+
+        ul {
             display: flex;
             list-style-type: none;
             justify-content: center;
             column-gap: 25px;
-            
-            li{
-                
+
+            li {
+
                 text-align: center;
-                
-                
-                a{
+
+
+                a {
                     text-decoration: none;
                     color: rgb(236, 100, 85);
                     font-size: 20px;
-                    font-weight:40px;
-                    
+                    font-weight: 40px;
 
-                    &:hover{
-                        
+
+                    &:hover {
+
                         font-size: 18px;
-                        text-decoration:underline;
-                        
+                        text-decoration: underline;
+
                     }
-                    
+
 
                 }
             }
@@ -40,159 +41,261 @@
     }
 }
 
-.mainMenu{
+.mainMenu {
     display: flex;
     flex-direction: column;
     padding: 10px 100px;
     justify-content: space-evenly;
-    
 
-    .menuComUno{
+
+    .menuComUno {
         display: flex;
         column-gap: 100px;
-        padding:  20px 70px;
-        
+        padding: 20px 70px;
 
-        .comida1{
+
+        .comida1 {
             height: 70vh;
             width: 40%;
             justify-content: center;
             border: 2px solid salmon;
             box-shadow: 5px 5px 10px rgb(70, 70, 70);
 
-            &:hover{
+            &:hover {
                 transform: scale(1.01);
             }
-            
 
-            .imgComida1{
+
+            .imgComida1 {
                 width: 100%;
                 height: 40%;
-                
-                
 
-                img{
+
+
+                img {
                     width: 100%;
                     height: 100%;
-                    object-fit:fill;
-                    
+                    object-fit: fill;
+
                 }
             }
 
-            .infComida1{
+            .infComida1 {
                 width: 100%;
                 height: 40%;
                 text-align: center;
-                                
-                p{
+
+                p {
                     text-align: justify;
                 }
             }
 
-            .comprar{
+            .comprar {
                 width: 100%;
                 height: 20%;
-                display: flex;                
+                display: flex;
                 justify-content: center;
                 align-items: center;
-                }
-            }            
-        }
-
-        .comida2{
-
-            @extend .comida1;
-
-            .imgComida2{
-                @extend .imgComida1;               
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-                
-            }
-
-            .infComida2{
-               @extend .infComida1;
-
-                p{
-                    text-align: justify;
-                }
-
-            }
-            .comprar2{
-                @extend .comprar;
             }
         }
+    }
 
-        .comida3{
-            @extend .comida1;    
-            
-            .imgComida3{
-                @extend .imgComida1; 
-                
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit:fill;
-                }
+    .comida2 {
+
+        @extend .comida1;
+
+        .imgComida2 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
 
-            .infComida3{
-                @extend .infComida1;
-                                
-                p{
-                    text-align: justify;
-                }
-            }
-
-            .comprar3{
-               @extend .comprar;
-                }
-            }            
         }
 
+        .infComida2 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+
+        }
+
+        .comprar2 {
+            @extend .comprar;
+        }
+    }
+
+    .comida3 {
+        @extend .comida1;
+
+        .imgComida3 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infComida3 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar3 {
+            @extend .comprar;
+        }
+    }
+}
 
 
-        /* ----------------------- MEDIA QUERYS -------------------*/
+
+/* ----------------------- MEDIA QUERYS -------------------*/
+
+
+@media screen and (max-width: 800px) {
+
+    .mainMenu {      
         
 
-        @media screen and (max-width: 800px){
+        .menuComUno {
+            column-gap: 10px;
+            padding: 5px 5px;
 
-            .mainMenu{
+            .comida1 {
+                height: 60vh;
+                width: 40%;
 
-                .menuComUno{
-                    column-gap: 10px;
-                    padding: 10PX 10px;
+                .imgComida1 {
+                    height: 40%;
 
-                    .comida1{
-                        height: 50vh;
-                        width: 40%;
-                        justify-content: center;
-                        border: 2px solid salmon;
-                        box-shadow: 5px 5px 10px rgb(70, 70, 70);
+                    img {
+                        
+                    }
+                }
 
 
-                        .infComida1{
 
-                            h2{
-                                font-size: 18px;
-                            }
+                .infComida1 {
+                    height: 40%;
 
-                            p{
-                                font-size: 10px;
-                            }
-                        }
-            
+                    h2 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 5px;
+                    }
+                }
+
+                .comprar {
+                    height: 20%;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .mainMenu {
+        padding: 10px 10px;
+
+
+        .menuComUno {
+            column-gap: 10px;
+
+            .comida1 {
+                height: 65vh;
+                width: 500px;
+
+                .imgComida1 {
+                    height: 40%;
+
+                    img {}
+                }
+
+                .infComida1 {
+                    height: 40%;
+
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 10px;
+
+                    }
+
+
+                }
+
+                .comprar {
+                    height: 20%;
+                    align-items: flex-end;
+
+
                 }
             }
-
-
-
         }
+    }
 
+}
+
+
+
+@media screen and (max-width: 1350px) {
+
+    .mainMenu {
+        padding: 10px 10px;
+
+
+        .menuComUno {
+            column-gap: 40px;
+
+            .comida1 {
+                height: 65vh;
+                width: 500px;
+
+                .imgComida1 {
+                    height: 40%;
+
+                    img {}
+                }
+
+                .infComida1 {
+                    height: 40%;
+
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 15px;
+
+                    }
+
+
+                }
+
+                .comprar {
+                    height: 20%;
+
+
+                }
+            }
         }
-    
-    
+    }
+
+}
