@@ -412,6 +412,10 @@ header .cabanias h3 {
   .mainHospedaje .cardTres {
     flex-direction: column; } }
 
+@media screen and (max-width: 600px) {
+  .mainHospedaje .imgCabu {
+    width: 100%; } }
+
 /* ********* ACTIVIDADES *********************** */
 .mainActi {
   display: flex;
