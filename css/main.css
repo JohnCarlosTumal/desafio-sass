@@ -456,6 +456,15 @@ header .cabanias h3 {
     .mainHospedaje .imgCabu {
       width: 100%; } }
 
+@media screen and (max-width: 400px) {
+  .mainHospedaje {
+    padding: 1px; }
+    .mainHospedaje .imgCabu {
+      width: 100%; }
+      .mainHospedaje .imgCabu #carouselExampleFade .carousel-inner .carousel-item {
+        height: 10rem;
+        width: 15rem; } }
+
 /* ********* ACTIVIDADES *********************** */
 .mainActi {
   display: flex;
