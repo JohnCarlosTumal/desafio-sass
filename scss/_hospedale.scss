@@ -1,255 +1,334 @@
-/* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */ 
+/* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */
 
-/* section descripcion*/ 
+/* section descripcion*/
 
 
-body{
+body {
     background-color: rgb(190, 190, 190);
 }
 
-header{
-    .cabanias{
-        .tit{
+header {
+    .cabanias {
+        .tit {
             font-size: 20px;
             font-weight: bolder;
         }
-        h3{
+
+        h3 {
             padding: 0;
         }
     }
 }
 
-.descripcion{
+.descripcion {
     @include textoCentrado;
 }
 
 
-.mainHospedaje{
+.mainHospedaje {
     display: flex;
     flex-direction: column;
 
-.cardUno{
-    display: flex;
-    column-gap: 20px;
+    .cardUno {
+        display: flex;
+        column-gap: 20px;
 
-    .infoUno{
+        .infoUno {
 
-        h3{
-            text-align: center;
-            span{
-                color: salmon;
-            }
-        }
+            h3 {
+                text-align: center;
 
-        p{
-            text-align: center;
-        }
-
-        
-    }
-
-    .imgCabu{
-
-        #carouselExampleFade{
-
-            .carousel-inner{
-
-                .carousel-item{
-                    height: 20rem;
-                    width: 40rem;
-                    background-position: center;
-                    background-size: cover;
+                span {
+                    color: salmon;
                 }
             }
-        }
-        
-    }
 
-
-}
-
-.cardDos{
-    display: flex;
-    column-gap: 20px;
-
-    .infoDos{
-        h3{
-            text-align: center;
-            span{
-                color: salmon;
+            p {
+                text-align: center;
             }
+
+
         }
 
-        p{
-            text-align: center;
-        }
-    }
+        .imgCabu {
 
-    .imgCabd{
-        
-        #carouselExampleFade{
+            #carouselExampleFade {
 
-            .carousel-inner{
+                .carousel-inner {
 
-                .carousel-item{
-
-                    height: 20rem;
-                    width: 40rem;
-                    background-position: center;
-                    background-size: cover;
-
+                    .carousel-item {
+                        height: 20rem;
+                        width: 40rem;
+                        background-position: center;
+                        background-size: cover;
+                    }
                 }
-
             }
 
         }
-        
+
 
     }
-}
 
-.cardTres{
-    display: flex;
-    column-gap: 20px;
+    .cardDos {
+        display: flex;
+        column-gap: 20px;
 
-    .infoTres{
-        h3{
-            text-align: center;
-            span{
-                color: salmon;
+        .infoDos {
+            h3 {
+                text-align: center;
+
+                span {
+                    color: salmon;
+                }
+            }
+
+            p {
+                text-align: center;
             }
         }
 
-        p{
-            text-align: center;
-        }
-    }
+        .imgCabd {
 
-    .imgCabt{
+            #carouselExampleFade {
 
-        #carouselExampleFade{
+                .carousel-inner {
 
-            .carousel-inner{
+                    .carousel-item {
 
-                .carousel-item{
+                        height: 20rem;
+                        width: 40rem;
+                        background-position: center;
+                        background-size: cover;
 
-                    height: 20rem;
-                    width: 40rem;
-                    background-position: center;
-                    background-size: cover;
+                    }
 
                 }
 
             }
 
+
         }
-        
-        
     }
-}
+
+    .cardTres {
+        display: flex;
+        column-gap: 20px;
+
+        .infoTres {
+            h3 {
+                text-align: center;
+
+                span {
+                    color: salmon;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .imgCabt {
+
+            #carouselExampleFade {
+
+                .carousel-inner {
+
+                    .carousel-item {
+
+                        height: 20rem;
+                        width: 40rem;
+                        background-position: center;
+                        background-size: cover;
+
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+
+
+    #conteItemCarrusel {
+
+        height: 200px;
+        overflow: hidden;
+
+        
+
+        .itemCarrusel {
+            border: 2px solid black;
+            height: 200px;
+            position: relative;
+           
+
+            #tarjetaCarrusel-1{
+                background-color: green;
+            }
+
+            #tarjetaCarrusel-2{
+                background-color: rgb(44, 93, 96);
+            }
+
+            #tarjetaCarrusel-3{
+                background-color: rgb(188, 144, 31);
+            }
+
+            .tarjetaCarrusel {
+                background-color: aqua;
+                height: 100%;
+
+            }
+
+            .flechasCarrusel {                
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+
+                a{
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+
+        
+
+    }
 
 }
 
-/* MEDIA QUERY */ 
+/* ----------------MEDIA QUERY -------------------- */
+
+@media screen and (max-width: 1200px) {
+
+    .imgCabu {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
 
 @media screen and (max-width: 1000px) {
 
-    .mainHospedaje{
+    .mainHospedaje {
 
-            .cardUno{
+        .cardUno {
             flex-direction: column;
 
-            .imgCabu{
+            .imgCabu {
 
-                #carouselExampleFade{
 
-                    .carousel-inner{
-                        
-        
-                        .carousel-item{
-        
+
+                #carouselExampleFade {
+
+
+                    .carousel-inner {
+
+
+
+                        .carousel-item {
+
                             height: 20rem;
                             width: 40rem;
                             background-position: center;
                             background-size: cover;
-        
+
                         }
-        
+
                     }
-        
+
                 }
             }
         }
 
-        .cardDos{            
+        .cardDos {
             flex-direction: column-reverse;
 
-            .imgCabd{
+            .imgCabd {
 
-                #carouselExampleFade{
+                #carouselExampleFade {
 
-                    .carousel-inner{
-                        
-        
-                        .carousel-item{
-        
+                    .carousel-inner {
+
+
+                        .carousel-item {
+
                             height: 20rem;
                             width: 40rem;
                             background-position: center;
                             background-size: cover;
-        
+
                         }
-        
+
                     }
-        
+
                 }
             }
         }
 
-        .cardTres{
+        .cardTres {
             flex-direction: column;
         }
-        
+
 
     }
-    
+
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-    .mainHospedaje{
+    .descripcion {
+        padding: 5px 15px 0px;
+    }
+
+    .mainHospedaje {
         padding: 10px;
 
-        .imgCabu{
+        .imgCabu {
             width: 100%;
         }
     }
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
 
-    .mainHospedaje{
+    .mainHospedaje {
         padding: 1px;
 
-        .imgCabu{
+        .imgCabu {
             width: 100%;
 
-            #carouselExampleFade{
+            #carouselExampleFade {
 
-                .carousel-inner{
-                    
-    
-                    .carousel-item{ 
-                        height: 10rem;                        
+                .carousel-inner {
+
+
+                    .carousel-item {
+                        height: 10rem;
                         width: 15rem;
-                        
-    
+
+
                     }
-    
+
                 }
-    
+
             }
         }
     }

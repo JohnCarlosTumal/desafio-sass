@@ -430,8 +430,39 @@ header .cabanias h3 {
       width: 40rem;
       background-position: center;
       background-size: cover; }
+  .mainHospedaje #conteItemCarrusel {
+    height: 200px;
+    overflow: hidden; }
+    .mainHospedaje #conteItemCarrusel .itemCarrusel {
+      border: 2px solid black;
+      height: 200px;
+      position: relative; }
+      .mainHospedaje #conteItemCarrusel .itemCarrusel #tarjetaCarrusel-1 {
+        background-color: green; }
+      .mainHospedaje #conteItemCarrusel .itemCarrusel #tarjetaCarrusel-2 {
+        background-color: #2c5d60; }
+      .mainHospedaje #conteItemCarrusel .itemCarrusel #tarjetaCarrusel-3 {
+        background-color: #bc901f; }
+      .mainHospedaje #conteItemCarrusel .itemCarrusel .tarjetaCarrusel {
+        background-color: aqua;
+        height: 100%; }
+      .mainHospedaje #conteItemCarrusel .itemCarrusel .flechasCarrusel {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px; }
+        .mainHospedaje #conteItemCarrusel .itemCarrusel .flechasCarrusel a {
+          text-decoration: none; }
 
-/* MEDIA QUERY */
+/* ----------------MEDIA QUERY -------------------- */
+@media screen and (max-width: 1200px) {
+  .imgCabu {
+    width: 100%; } }
+
 @media screen and (max-width: 1000px) {
   .mainHospedaje .cardUno {
     flex-direction: column; }
@@ -451,6 +482,8 @@ header .cabanias h3 {
     flex-direction: column; } }
 
 @media screen and (max-width: 600px) {
+  .descripcion {
+    padding: 5px 15px 0px; }
   .mainHospedaje {
     padding: 10px; }
     .mainHospedaje .imgCabu {
