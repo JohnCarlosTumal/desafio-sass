@@ -84,6 +84,19 @@ header {
     header .lemaDos h2 {
       font-size: 70px;
       font-weight: bold; }
+    header .lemaDos .iconos {
+      display: flex;
+      justify-content: left;
+      padding-left: 130px;
+      padding-top: 100px;
+      align-items: flex-end;
+      font-size: 20px;
+      column-gap: 30px; }
+      header .lemaDos .iconos a {
+        text-decoration: none;
+        color: white; }
+        header .lemaDos .iconos a:hover {
+          color: salmon; }
 
 .somos {
   text-align: center;
@@ -214,9 +227,13 @@ footer {
     display: none; }
   header .menuDos nav ul {
     display: none; }
-  main .galeria-container {
-    grid-auto-rows: 100px;
-    gap: 10px; }
+  .lemaDos .iconos i {
+    display: none; }
+  main {
+    padding: 20px 80px 20px 80px; }
+    main .galeria-container {
+      grid-auto-rows: 100px;
+      gap: 10px; }
   footer {
     gap: 70px;
     padding-bottom: 10px; }
@@ -238,6 +255,13 @@ footer {
     font-size: 20px; }
   .somos p {
     font-size: 15px; } }
+
+@media screen and (min-width: 700px) {
+  .main {
+    padding: 5px 10px 5px 10px; }
+    .main .galeria-container {
+      padding: 1px;
+      column-gap: 2px; } }
 
 /* ----------------***********  MENU  *********-----------------*/
 .subMenu {
@@ -431,21 +455,17 @@ header .cabanias h3 {
       background-position: center;
       background-size: cover; }
   .mainHospedaje #conteItemCarrusel {
-    height: 200px;
+    height: 300px;
+    width: 150rem;
     overflow: hidden; }
     .mainHospedaje #conteItemCarrusel .itemCarrusel {
-      border: 2px solid black;
-      height: 200px;
+      height: 300px;
+      width: 40rem;
       position: relative; }
-      .mainHospedaje #conteItemCarrusel .itemCarrusel #tarjetaCarrusel-1 {
-        background-color: green; }
-      .mainHospedaje #conteItemCarrusel .itemCarrusel #tarjetaCarrusel-2 {
-        background-color: #2c5d60; }
-      .mainHospedaje #conteItemCarrusel .itemCarrusel #tarjetaCarrusel-3 {
-        background-color: #bc901f; }
-      .mainHospedaje #conteItemCarrusel .itemCarrusel .tarjetaCarrusel {
-        background-color: aqua;
-        height: 100%; }
+      .mainHospedaje #conteItemCarrusel .itemCarrusel .tarjetaCarrusel img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
       .mainHospedaje #conteItemCarrusel .itemCarrusel .flechasCarrusel {
         position: absolute;
         top: 0;
@@ -457,6 +477,11 @@ header .cabanias h3 {
         padding: 20px; }
         .mainHospedaje #conteItemCarrusel .itemCarrusel .flechasCarrusel a {
           text-decoration: none; }
+          .mainHospedaje #conteItemCarrusel .itemCarrusel .flechasCarrusel a i {
+            color: #b0b0b0;
+            font-size: 30px; }
+            .mainHospedaje #conteItemCarrusel .itemCarrusel .flechasCarrusel a i:hover {
+              color: white; }
 
 /* ----------------MEDIA QUERY -------------------- */
 @media screen and (max-width: 1200px) {

@@ -155,36 +155,28 @@ header {
 
     #conteItemCarrusel {
 
-        height: 200px;
+        height: 300px;
+        width: 150rem;
         overflow: hidden;
 
-        
-
         .itemCarrusel {
-            border: 2px solid black;
-            height: 200px;
-            position: relative;
-           
 
-            #tarjetaCarrusel-1{
-                background-color: green;
-            }
+            height: 300px;
+            width: 40rem;
+            position: relative;           
 
-            #tarjetaCarrusel-2{
-                background-color: rgb(44, 93, 96);
-            }
-
-            #tarjetaCarrusel-3{
-                background-color: rgb(188, 144, 31);
-            }
-
-            .tarjetaCarrusel {
-                background-color: aqua;
-                height: 100%;
+            .tarjetaCarrusel {                
+                
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit:cover;
+                }
 
             }
 
-            .flechasCarrusel {                
+            .flechasCarrusel {
                 position: absolute;
                 top: 0;
                 height: 100%;
@@ -194,15 +186,23 @@ header {
                 justify-content: space-between;
                 padding: 20px;
 
-                a{
+                a {
                     text-decoration: none;
+
+                    i {
+                        color: rgb(176, 176, 176);
+                        font-size: 30px;
+                        &:hover{
+                            color: white;
+                        }
+                    }
                 }
 
             }
 
         }
 
-        
+
 
     }
 

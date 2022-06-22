@@ -47,6 +47,7 @@ header {
                     
                 }
             }
+            
         }
     }
 
@@ -127,7 +128,26 @@ header {
 
         h2 {
             font-size: 70px;
-            font-weight: bold;
+            font-weight: bold;            
+        }
+
+        .iconos{
+            display: flex;
+            justify-content:left;
+            padding-left: 130px;
+            padding-top: 100px;
+            align-items: flex-end;
+            font-size: 20px;
+            column-gap: 30px;
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: salmon;
+                }
+            }
         }
     }
 }
@@ -371,7 +391,18 @@ footer {
 
     }
 
+    .lemaDos{
+
+        .iconos{
+            i{
+                display: none;
+            }
+        }
+    }
+
     main{
+
+        padding: 20px 80px 20px 80px;
 
         .galeria-container{        
         
@@ -428,4 +459,17 @@ footer {
         }
     }
     
+}
+
+
+@media screen and (min-width: 700px){
+    .main{
+        padding: 5px 10px 5px 10px;
+        
+
+        .galeria-container{
+            padding: 1px;
+            column-gap: 2px;
+        }
+    }
 }
