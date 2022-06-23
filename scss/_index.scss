@@ -133,21 +133,44 @@ header {
 
         .iconos{
             display: flex;
-            justify-content:left;
-            padding-left: 130px;
+            justify-content:space-around;            
             padding-top: 100px;
             align-items: flex-end;
             font-size: 20px;
-            column-gap: 30px;
+            
 
-            a{
-                text-decoration: none;
-                color: white;
+            .contenedorIcono{
 
-                &:hover{
-                    color: salmon;
+                a{
+                    text-decoration: none;                                        
+                    color: white;
+
+                    i{
+                        padding: 15px;
+                        
+                    }
+    
+                    &:hover{
+                        color: salmon;
+                    }
+                   
                 }
             }
+
+            .contenedorUbicacion{
+                h3{
+                    font-size: 16px;
+                    
+
+                    i{
+                        padding-right: 15px;
+                        color: salmon;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+           
         }
     }
 }
@@ -290,16 +313,39 @@ footer {
         .dir {
             font-size: 15px;
             color: rgb(57, 55, 55);
+
+            i{
+                padding-right: 20px;
+            }
+
+            
         }
 
         .tel {
             font-size: 15px;
             color: rgb(57, 55, 55);
+
+            i{
+                padding-right: 20px;
+            }
         }
 
         .email {
             font-size: 15px;
             color: rgb(57, 55, 55);
+            text-decoration: underline;
+
+            i{
+                padding-right: 20px;
+            }
+        }
+
+        
+
+        .derechos{
+            font-size: 15px;
+            color: rgb(57, 55, 55);
+            padding-top: 15px;
         }
     }
 
@@ -325,6 +371,16 @@ footer {
 
             span{
                 display: block;
+            }            
+        }
+
+        h3{
+            font-size: 15px;
+            padding-top: 5px;
+            color: rgb(57, 55, 55);
+            .autor{
+                color: salmon;
+                text-decoration: underline;
             }
         }
     }
@@ -394,9 +450,19 @@ footer {
     .lemaDos{
 
         .iconos{
-            i{
-                display: none;
+
+            .contenedorIcono{
+                i{
+                    display: none;
+                }
             }
+
+            .contenedorUbicacion{
+                h3{
+                    display: none;
+                }
+            }
+            
         }
     }
 
@@ -418,18 +484,31 @@ footer {
         .informacion{
 
             .inf{
-                font-size: 15px;
+                font-size: 15px;                
             }
 
             .dir{
                 font-size: 10px;
+                i{
+                    padding-right: 5px;
+                }
             }
 
             .tel{
                 font-size: 10px;
+                i{
+                    padding-right: 5px;
+                }
             }
 
             .email{
+                font-size: 10px;
+                i{
+                    padding-right: 5px;
+                }
+            }
+
+            .derechos{
                 font-size: 10px;
             }
         }
@@ -446,6 +525,11 @@ footer {
             h6{
                 font-size: 10px;
             }
+
+            h3{
+                font-size: 10px;
+                padding-top: 12px;
+            }
         }
     }
 
@@ -455,20 +539,21 @@ footer {
         }
 
         p{
-            font-size: 15px;
+            font-size: 12px;
         }
     }
     
 }
 
 
-@media screen and (min-width: 700px){
-    .main{
-        padding: 5px 10px 5px 10px;
+@media screen and (max-width: 600px){
+
+    main{
+        padding: 5px 40px 5px 40px;
         
 
         .galeria-container{
-            padding: 1px;
+            padding: 10px;
             column-gap: 2px;
         }
     }

@@ -86,17 +86,23 @@ header {
       font-weight: bold; }
     header .lemaDos .iconos {
       display: flex;
-      justify-content: left;
-      padding-left: 130px;
+      justify-content: space-around;
       padding-top: 100px;
       align-items: flex-end;
-      font-size: 20px;
-      column-gap: 30px; }
-      header .lemaDos .iconos a {
+      font-size: 20px; }
+      header .lemaDos .iconos .contenedorIcono a {
         text-decoration: none;
         color: white; }
-        header .lemaDos .iconos a:hover {
+        header .lemaDos .iconos .contenedorIcono a i {
+          padding: 15px; }
+        header .lemaDos .iconos .contenedorIcono a:hover {
           color: salmon; }
+      header .lemaDos .iconos .contenedorUbicacion h3 {
+        font-size: 16px; }
+        header .lemaDos .iconos .contenedorUbicacion h3 i {
+          padding-right: 15px;
+          color: salmon;
+          font-size: 20px; }
 
 .somos {
   text-align: center;
@@ -192,12 +198,23 @@ footer {
   footer .informacion .dir {
     font-size: 15px;
     color: #393737; }
+    footer .informacion .dir i {
+      padding-right: 20px; }
   footer .informacion .tel {
     font-size: 15px;
     color: #393737; }
+    footer .informacion .tel i {
+      padding-right: 20px; }
   footer .informacion .email {
     font-size: 15px;
-    color: #393737; }
+    color: #393737;
+    text-decoration: underline; }
+    footer .informacion .email i {
+      padding-right: 20px; }
+  footer .informacion .derechos {
+    font-size: 15px;
+    color: #393737;
+    padding-top: 15px; }
   footer .horarios h4 {
     font-size: 25px;
     color: salmon; }
@@ -211,6 +228,13 @@ footer {
     color: #393737; }
     footer .horarios h6 span {
       display: block; }
+  footer .horarios h3 {
+    font-size: 15px;
+    padding-top: 5px;
+    color: #393737; }
+    footer .horarios h3 .autor {
+      color: salmon;
+      text-decoration: underline; }
 
 /* MEDIA QUERY*/
 @media screen and (max-width: 1024px) {
@@ -227,7 +251,9 @@ footer {
     display: none; }
   header .menuDos nav ul {
     display: none; }
-  .lemaDos .iconos i {
+  .lemaDos .iconos .contenedorIcono i {
+    display: none; }
+  .lemaDos .iconos .contenedorUbicacion h3 {
     display: none; }
   main {
     padding: 20px 80px 20px 80px; }
@@ -241,9 +267,17 @@ footer {
       font-size: 15px; }
     footer .informacion .dir {
       font-size: 10px; }
+      footer .informacion .dir i {
+        padding-right: 5px; }
     footer .informacion .tel {
       font-size: 10px; }
+      footer .informacion .tel i {
+        padding-right: 5px; }
     footer .informacion .email {
+      font-size: 10px; }
+      footer .informacion .email i {
+        padding-right: 5px; }
+    footer .informacion .derechos {
       font-size: 10px; }
     footer .horarios h4 {
       font-size: 15px; }
@@ -251,16 +285,19 @@ footer {
       font-size: 10px; }
     footer .horarios h6 {
       font-size: 10px; }
+    footer .horarios h3 {
+      font-size: 10px;
+      padding-top: 12px; }
   .somos h3 {
     font-size: 20px; }
   .somos p {
-    font-size: 15px; } }
+    font-size: 12px; } }
 
-@media screen and (min-width: 700px) {
-  .main {
-    padding: 5px 10px 5px 10px; }
-    .main .galeria-container {
-      padding: 1px;
+@media screen and (max-width: 600px) {
+  main {
+    padding: 5px 40px 5px 40px; }
+    main .galeria-container {
+      padding: 10px;
       column-gap: 2px; } }
 
 /* ----------------***********  MENU  *********-----------------*/
