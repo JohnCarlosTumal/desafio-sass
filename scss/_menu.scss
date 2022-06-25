@@ -42,21 +42,24 @@
 }
 
 .mainMenu {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 100px;
-    justify-content: space-evenly;
+    
+    display: grid;
+    padding: 10px 10px;
+    justify-content: center;
+    row-gap: 20px;
+    
 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
-    .menuComUno {
-        display: flex;
-        column-gap: 100px;
-        padding: 20px 70px;
+    grid-template-areas: "comida1 comida2"
+    "comida3 comida4"
+    "comida5 comida6";
 
-
-        .comida1 {
-            height: 50vh;
-            width: 35%;
+    .comida1{
+        grid-area: comida1;
+        height: 50vh;
+            width: 70%;
             justify-content: center;
             border: 2px solid salmon;
             box-shadow: 5px 5px 10px rgb(70, 70, 70);
@@ -97,11 +100,10 @@
                 justify-content: center;
                 align-items: center;
             }
-        }
     }
 
-    .comida2 {
-
+    .comida2{
+        grid-area: comida2;
         @extend .comida1;
 
         .imgComida2 {
@@ -127,6 +129,30 @@
         .comprar2 {
             @extend .comprar;
         }
+    }
+
+    .comida3{
+        grid-area: comida3;
+    }
+
+    .comida4{
+        grid-area: comida4;
+    }
+
+    .comida5{
+        grid-area: comida5;
+    }
+
+    .comida6{
+        grid-area: comida6;
+    }
+    
+
+        
+
+    .comida2 {
+
+       
     }
 
     .comida3 {
@@ -161,163 +187,151 @@
 /* ----------------------- MEDIA QUERYS -------------------*/
 
 
-@media screen and (max-width: 800px) {
+// @media screen and (max-width: 800px) {
 
-    .mainMenu {      
+//     .mainMenu {      
         
 
-        .menuComUno {
-            column-gap: 10px;
-            padding: 5px 5px;
+//         .menuComUno {
+//             column-gap: 10px;
+//             padding: 5px 5px;
 
-            .comida1 {
-                height: 50vh;
-                width: 35%;
+//             .comida1 {
+//                 height: 50vh;
+//                 width: 35%;
 
-                .imgComida1 {
-                    height: 40%;
+//                 .imgComida1 {
+//                     height: 40%;
 
-                    img {
+//                     img {
                         
-                    }
-                }
+//                     }
+//                 }
 
 
 
-                .infComida1 {
-                    height: 40%;
+//                 .infComida1 {
+//                     height: 40%;
 
-                    h2 {
-                        font-size: 15px;
-                    }
+//                     h2 {
+//                         font-size: 15px;
+//                     }
 
-                    p {
-                        font-size: 5px;
-                    }
-                }
+//                     p {
+//                         font-size: 5px;
+//                     }
+//                 }
 
-                .comprar {
-                    height: 20%;
-                }
+//                 .comprar {
+//                     height: 20%;
+//                 }
 
-            }
-        }
+//             }
+//         }
+//     }
+
+// }
+
+
+// @media screen and (max-width: 1024px) {
+
+//     .mainMenu {
+//         padding: 10px 10px;
+
+
+//         .menuComUno {
+//             column-gap: 10px;
+
+//             .comida1 {
+//                 height: 65vh;
+//                 width: 500px;
+
+//                 .imgComida1 {
+//                     height: 40%;
+
+//                     img {}
+//                 }
+
+//                 .infComida1 {
+//                     height: 40%;
+
+//                     h2 {
+//                         font-size: 20px;
+//                     }
+
+//                     p {
+//                         font-size: 10px;
+
+//                     }
+
+
+//                 }
+
+//                 .comprar {
+//                     height: 20%;
+//                     align-items: flex-end;
+
+
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+
+
+// @media screen and (max-width: 1350px) {
+
+//     .mainMenu {
+//         padding: 10px 10px;
+
+
+//         .menuComUno {
+//             column-gap: 40px;
+
+//             .comida1 {
+//                 height: 50vh;
+//                 width: 500px;
+
+//                 .imgComida1 {
+//                     height: 50%;
+
+//                     img {}
+//                 }
+
+//                 .infComida1 {
+//                     height: 30%;
+
+//                     h2 {
+//                         font-size: 20px;
+//                     }
+
+//                     p {
+//                         font-size: 15px;
+
+//                     }
+
+
+//                 }
+
+//                 .comprar {
+//                     height: 20%;
+
+
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+
+@media screen and (max-width: 600px) {
+
+    .mainMenu{
+        background-color: red;
     }
-
-}
-
-
-@media screen and (max-width: 1024px) {
-
-    .mainMenu {
-        padding: 10px 10px;
-
-
-        .menuComUno {
-            column-gap: 10px;
-
-            .comida1 {
-                height: 65vh;
-                width: 500px;
-
-                .imgComida1 {
-                    height: 40%;
-
-                    img {}
-                }
-
-                .infComida1 {
-                    height: 40%;
-
-                    h2 {
-                        font-size: 20px;
-                    }
-
-                    p {
-                        font-size: 10px;
-
-                    }
-
-
-                }
-
-                .comprar {
-                    height: 20%;
-                    align-items: flex-end;
-
-
-                }
-            }
-        }
-    }
-
-}
-
-
-
-@media screen and (max-width: 1350px) {
-
-    .mainMenu {
-        padding: 10px 10px;
-
-
-        .menuComUno {
-            column-gap: 40px;
-
-            .comida1 {
-                height: 50vh;
-                width: 500px;
-
-                .imgComida1 {
-                    height: 50%;
-
-                    img {}
-                }
-
-                .infComida1 {
-                    height: 30%;
-
-                    h2 {
-                        font-size: 20px;
-                    }
-
-                    p {
-                        font-size: 15px;
-
-                    }
-
-
-                }
-
-                .comprar {
-                    height: 20%;
-
-
-                }
-            }
-        }
-    }
-
-}
-
-
-@media screen and (max-width: 400px) {
-
-    .menuComUno{
-        
-        
-        .comida1{
-
-        }
-
-        .comida2{
-            display: none;
-
-        }
-
-        .comida3{
-            
-        }
         // display: grid;
 
         // grid-template-columns: 1fr 1fr;
@@ -356,12 +370,12 @@
         //     width: 50rem;
 
         // }
-    }
+    
     
 }
 
-@media screen and (max-width: 500px){
-    .menuComUno{
+@media screen and (max-width: 400px){
+    .mainMenu{
         background-color: blue;
     }
 }
