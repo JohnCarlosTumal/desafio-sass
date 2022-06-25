@@ -55,8 +55,8 @@
 
 
         .comida1 {
-            height: 70vh;
-            width: 40%;
+            height: 50vh;
+            width: 35%;
             justify-content: center;
             border: 2px solid salmon;
             box-shadow: 5px 5px 10px rgb(70, 70, 70);
@@ -68,7 +68,7 @@
 
             .imgComida1 {
                 width: 100%;
-                height: 40%;
+                height: 50%;
 
 
 
@@ -82,7 +82,7 @@
 
             .infComida1 {
                 width: 100%;
-                height: 40%;
+                height: 30%;
                 text-align: center;
 
                 p {
@@ -171,8 +171,8 @@
             padding: 5px 5px;
 
             .comida1 {
-                height: 60vh;
-                width: 40%;
+                height: 50vh;
+                width: 35%;
 
                 .imgComida1 {
                     height: 40%;
@@ -265,17 +265,17 @@
             column-gap: 40px;
 
             .comida1 {
-                height: 65vh;
+                height: 50vh;
                 width: 500px;
 
                 .imgComida1 {
-                    height: 40%;
+                    height: 50%;
 
                     img {}
                 }
 
                 .infComida1 {
-                    height: 40%;
+                    height: 30%;
 
                     h2 {
                         font-size: 20px;
@@ -298,4 +298,70 @@
         }
     }
 
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .menuComUno{
+        
+        
+        .comida1{
+
+        }
+
+        .comida2{
+            display: none;
+
+        }
+
+        .comida3{
+            
+        }
+        // display: grid;
+
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+
+        // grid-template-areas: "comida1 comida2"
+        //                     "comida3 comida4"
+        //                     "comida5 comida6";
+
+        // .comida1{
+        //     grid-area: comida1;
+        // }
+
+        // .comida2{
+        //     grid-area: comida2;
+        // }
+
+        // .comida3{
+        //     grid-area: comida3;
+        // }
+
+        // .comida4{
+        //     grid-area: comida4;
+        // }
+
+        // .comida5{
+        //     grid-area: comida5;
+        // }
+
+        // .comida6{
+        //     grid-area: comida6;
+        // }
+
+        // .comida1{
+        //     height: 50vh;
+        //     width: 50rem;
+
+        // }
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .menuComUno{
+        background-color: blue;
+    }
 }
