@@ -41,69 +41,73 @@
     }
 }
 
-.mainMenu {
-    
-    display: grid;
+.comidas {
+
+    display: flex;
+    flex-direction: column;
     padding: 10px 10px;
     justify-content: center;
+    align-items: center;
     row-gap: 20px;
-    
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 
-    grid-template-areas: "comida1 comida2"
-    "comida3 comida4"
-    "comida5 comida6";
 
-    .comida1{
-        grid-area: comida1;
+
+    .comida1 {
+
         height: 50vh;
-            width: 70%;
+        width: 70%;
+        justify-content: center;
+        border: 2px solid salmon;
+        box-shadow: 5px 5px 10px rgb(70, 70, 70);
+        
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+
+        .imgComida1 {
+            width: 100%;
+            height: 50%;
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        .infComida1 {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            
+
+            h2{
+                font-size: 20px;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 15px;
+            }
+        }
+
+        .comprar {
+            width: 100%;
+            height: 20%;
+            display: flex;
             justify-content: center;
-            border: 2px solid salmon;
-            box-shadow: 5px 5px 10px rgb(70, 70, 70);
-
-            &:hover {
-                transform: scale(1.01);
-            }
-
-
-            .imgComida1 {
-                width: 100%;
-                height: 50%;
-
-
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: fill;
-
-                }
-            }
-
-            .infComida1 {
-                width: 100%;
-                height: 30%;
-                text-align: center;
-
-                p {
-                    text-align: justify;
-                }
-            }
-
-            .comprar {
-                width: 100%;
-                height: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+            align-items: center;
+        }
     }
 
-    .comida2{
-        grid-area: comida2;
+    .comida2 {
+
         @extend .comida1;
 
         .imgComida2 {
@@ -131,30 +135,6 @@
         }
     }
 
-    .comida3{
-        grid-area: comida3;
-    }
-
-    .comida4{
-        grid-area: comida4;
-    }
-
-    .comida5{
-        grid-area: comida5;
-    }
-
-    .comida6{
-        grid-area: comida6;
-    }
-    
-
-        
-
-    .comida2 {
-
-       
-    }
-
     .comida3 {
         @extend .comida1;
 
@@ -180,202 +160,639 @@
             @extend .comprar;
         }
     }
+
+    .comida4 {
+        @extend .comida1;
+
+        .imgComida4 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infComida4 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar4 {
+            @extend .comprar;
+        }
+
+    }
+
+    .comida5 {
+        @extend .comida1;
+
+        .imgComida5 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infComida5 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar5 {
+            @extend .comprar;
+        }
+
+    }
+
+    .comida6 {
+        @extend .comida1;
+
+        .imgComida6 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infComida6 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar6 {
+            @extend .comprar;
+        }
+
+    }
+
+    /*-------------------------------------BEBIDAS ---------------------------------------*/
+
+    .bebida1 {
+
+        height: 50vh;
+        width: 70%;
+        justify-content: center;
+        border: 2px solid salmon;
+        box-shadow: 5px 5px 10px rgb(70, 70, 70);
+        
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+
+        .imgBebida1 {
+            width: 100%;
+            height: 50%;
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        .infBebida1 {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            
+
+            h2{
+                font-size: 20px;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 15px;
+            }
+        }
+
+        .comprar {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .bebida2 {
+
+        @extend .comida1;
+
+        .imgBebida2 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .infBebida2 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+
+        }
+
+        .comprar2 {
+            @extend .comprar;
+        }
+    }
+
+    .bebida3 {
+        @extend .comida1;
+
+        .imgBebida3 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infBebida3 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar3 {
+            @extend .comprar;
+        }
+    }
+
+    .bebida4 {
+        @extend .comida1;
+
+        .imgBebida4 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infBebida4 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar4 {
+            @extend .comprar;
+        }
+
+    }
+
+    .bebida5 {
+        @extend .comida1;
+
+        .imgBebida5 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infBebida5 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar5 {
+            @extend .comprar;
+        }
+
+    }
+
+    .bebida6 {
+        @extend .comida1;
+
+        .imgBebida6 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infBebida6 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar6 {
+            @extend .comprar;
+        }
+
+    }
+
+    /* ----------------------COCTELES----------------------*/
+
+    .coctel1 {
+
+        height: 50vh;
+        width: 70%;
+        justify-content: center;
+        border: 2px solid salmon;
+        box-shadow: 5px 5px 10px rgb(70, 70, 70);
+        
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+
+        .imgCoctel1 {
+            width: 100%;
+            height: 50%;
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        .infCoctel1 {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            
+
+            h2{
+                font-size: 20px;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 15px;
+            }
+        }
+
+        .comprar {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .coctel2 {
+
+        @extend .comida1;
+
+        .imgCoctel2 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .infCoctel2 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+
+        }
+
+        .comprar2 {
+            @extend .comprar;
+        }
+    }
+
+    .coctel3 {
+        @extend .comida1;
+
+        .imgCoctel3 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infCoctel3 {
+            @extend .infComida1;
+
+           
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar3 {
+            @extend .comprar;
+        }
+    }
+
+    .coctel4 {
+        @extend .comida1;
+
+        .imgCoctel4 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infCoctel4 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar4 {
+            @extend .comprar;
+        }
+
+    }
+
+    .coctel5 {
+        @extend .comida1;
+
+        .imgCoctel5 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infCoctel5 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar5 {
+            @extend .comprar;
+        }
+
+    }
+
+    .coctel6 {
+        @extend .comida1;
+
+        .imgCoctel6 {
+            @extend .imgComida1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .infCoctel6 {
+            @extend .infComida1;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .comprar6 {
+            @extend .comprar;
+        }
+
+    }
+
+
 }
+
+
+
+
+
+
+
 
 
 
 /* ----------------------- MEDIA QUERYS -------------------*/
 
+@media screen and (min-width: 700px) {
 
-// @media screen and (max-width: 800px) {
+    .comidas {
 
-//     .mainMenu {      
-        
+        display: grid;
+        justify-items: center;
 
-//         .menuComUno {
-//             column-gap: 10px;
-//             padding: 5px 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 1fr);
 
-//             .comida1 {
-//                 height: 50vh;
-//                 width: 35%;
+        grid-template-areas: "comida1 comida2"
+            "comida3 comida4"
+            "comida5 comida6"
+            "bebida1 bebida2"
+            "bebida3 bebida4"
+            "bebida5 bebida6"
+            "coctel1 coctel2"
+            "coctel3 coctel4"
+            "coctel5 coctel6";
 
-//                 .imgComida1 {
-//                     height: 40%;
+        .comida1 {
+            grid-area: comida1;
+            width: 95%;            
+        }
 
-//                     img {
-                        
-//                     }
-//                 }
+        .comida2 {
+            grid-area: comida2;
+            width: 95%;
+        }
 
+        .comida3 {
+            grid-area: comida3;
+            width: 95%;
+        }
 
+        .comida4 {
+            grid-area: comida4;
+            width: 95%;
+        }
 
-//                 .infComida1 {
-//                     height: 40%;
+        .comida5 {
+            grid-area: comida5;
+            width: 95%;
+        }
 
-//                     h2 {
-//                         font-size: 15px;
-//                     }
+        .comida6 {
+            grid-area: comida6;
+            width: 95%;
+        }
 
-//                     p {
-//                         font-size: 5px;
-//                     }
-//                 }
+        .bebida1 {
+            grid-area: bebida1;
+            width: 95%;            
+        }
 
-//                 .comprar {
-//                     height: 20%;
-//                 }
+        .bebida2 {
+            grid-area: bebida2;
+            width: 95%;
+        }
 
-//             }
-//         }
-//     }
+        .bebida3 {
+            grid-area: bebida3;
+            width: 95%;
+        }
 
-// }
+        .bebida4 {
+            grid-area: bebida4;
+            width: 95%;
+        }
 
+        .bebida5 {
+            grid-area: bebida5;
+            width: 95%;
+        }
 
-// @media screen and (max-width: 1024px) {
+        .bebida6 {
+            grid-area: bebida6;
+            width: 95%;
+        }
 
-//     .mainMenu {
-//         padding: 10px 10px;
+        .coctel1 {
+            grid-area: coctel1;
+            width: 95%;            
+        }
 
+        .coctel2 {
+            grid-area: coctel2;
+            width: 95%;
+        }
 
-//         .menuComUno {
-//             column-gap: 10px;
+        .coctel3 {
+            grid-area: coctel3;
+            width: 95%;
+        }
 
-//             .comida1 {
-//                 height: 65vh;
-//                 width: 500px;
+        .coctel4 {
+            grid-area: coctel4;
+            width: 95%;
+        }
 
-//                 .imgComida1 {
-//                     height: 40%;
+        .coctel5 {
+            grid-area: coctel5;
+            width: 95%;
+        }
 
-//                     img {}
-//                 }
-
-//                 .infComida1 {
-//                     height: 40%;
-
-//                     h2 {
-//                         font-size: 20px;
-//                     }
-
-//                     p {
-//                         font-size: 10px;
-
-//                     }
-
-
-//                 }
-
-//                 .comprar {
-//                     height: 20%;
-//                     align-items: flex-end;
-
-
-//                 }
-//             }
-//         }
-//     }
-
-// }
-
-
-
-// @media screen and (max-width: 1350px) {
-
-//     .mainMenu {
-//         padding: 10px 10px;
-
-
-//         .menuComUno {
-//             column-gap: 40px;
-
-//             .comida1 {
-//                 height: 50vh;
-//                 width: 500px;
-
-//                 .imgComida1 {
-//                     height: 50%;
-
-//                     img {}
-//                 }
-
-//                 .infComida1 {
-//                     height: 30%;
-
-//                     h2 {
-//                         font-size: 20px;
-//                     }
-
-//                     p {
-//                         font-size: 15px;
-
-//                     }
-
-
-//                 }
-
-//                 .comprar {
-//                     height: 20%;
-
-
-//                 }
-//             }
-//         }
-//     }
-
-// }
-
-
-@media screen and (max-width: 600px) {
-
-    .mainMenu{
-        background-color: red;
+        .coctel6 {
+            grid-area: coctel6;
+            width: 95%;
+        }
     }
-        // display: grid;
 
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 1fr 1fr 1fr;
 
-        // grid-template-areas: "comida1 comida2"
-        //                     "comida3 comida4"
-        //                     "comida5 comida6";
 
-        // .comida1{
-        //     grid-area: comida1;
-        // }
-
-        // .comida2{
-        //     grid-area: comida2;
-        // }
-
-        // .comida3{
-        //     grid-area: comida3;
-        // }
-
-        // .comida4{
-        //     grid-area: comida4;
-        // }
-
-        // .comida5{
-        //     grid-area: comida5;
-        // }
-
-        // .comida6{
-        //     grid-area: comida6;
-        // }
-
-        // .comida1{
-        //     height: 50vh;
-        //     width: 50rem;
-
-        // }
-    
-    
 }
 
-@media screen and (max-width: 400px){
-    .mainMenu{
-        background-color: blue;
+@media screen and (min-width: 1200px) {
+    .comidas {
+        padding: 20px 100px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+
+        grid-template-areas: "comida1 comida2 comida3"
+        "comida4 comida5 comida6"
+        "bebida1 bebida2 bebida3"
+        "bebida4 bebida5 bebida6"
+        "coctel1 coctel2 coctel3"
+        "coctel4 coctel5 coctel6";
+
+        .comida1 {
+            width: 95%;
+            
+        }
+
+        .comida2 {
+            width: 95%;
+        }
+
+        .comida3 {
+            width: 95%;
+        }
+
+        .comida4 {
+            width: 95%;
+        }
+
+        .comida5 {
+            width: 95%;
+        }
+
+        .comida6 {
+            width: 95%;
+        }
     }
 }
