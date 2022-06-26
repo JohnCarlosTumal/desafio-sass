@@ -727,33 +727,200 @@ header .cabanias h3 {
         width: 15rem; } }
 
 /* ********* ACTIVIDADES *********************** */
+.sectionMenu {
+  text-align: center;
+  padding: 10px 80px; }
+
 .mainActi {
   display: flex;
-  column-gap: 30px; }
-  .mainActi .sexUno .cardPrimera {
+  row-gap: 30px;
+  flex-direction: column;
+  padding-bottom: 50px; }
+  .mainActi .cardPrimera {
     box-shadow: -5px -5px 10px black, 5px 5px 10px black; }
-    .mainActi .sexUno .cardPrimera:hover {
+    .mainActi .cardPrimera:hover {
       transform: scale(1.01); }
-    .mainActi .sexUno .cardPrimera .actiUno {
+    .mainActi .cardPrimera .actiUno {
       width: 100%;
-      height: 70%; }
-      .mainActi .sexUno .cardPrimera .actiUno img {
-        width: 100%;
-        height: 100%; }
-    .mainActi .sexUno .cardPrimera .descripcion1 {
+      height: 70%;
+      overflow: hidden; }
+      .mainActi .cardPrimera .actiUno ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+        .mainActi .cardPrimera .actiUno ul li {
+          width: 100%;
+          list-style: none; }
+          .mainActi .cardPrimera .actiUno ul li img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill; }
+    .mainActi .cardPrimera .descripcion1 {
+      height: 30%;
+      width: 100%;
       text-align: center; }
-  .mainActi .sexUno .cardSegunda {
+      .mainActi .cardPrimera .descripcion1 p {
+        font-size: 15px; }
+  .mainActi .cardSegunda {
     box-shadow: 5px 5px 10px black, -5px -5px 10px black; }
-    .mainActi .sexUno .cardSegunda:hover {
+    .mainActi .cardSegunda:hover {
       transform: scale(1.01); }
-    .mainActi .sexUno .cardSegunda .actiDos {
+    .mainActi .cardSegunda .actiDos {
       width: 100%;
-      height: 70%; }
-      .mainActi .sexUno .cardSegunda .actiDos img {
-        width: 100%;
-        height: 100%; }
-    .mainActi .sexUno .cardSegunda .descripcion2 {
+      height: 70%;
+      overflow: hidden; }
+      .mainActi .cardSegunda .actiDos ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+        .mainActi .cardSegunda .actiDos ul li {
+          width: 100%;
+          list-style: none; }
+          .mainActi .cardSegunda .actiDos ul li img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill; }
+    .mainActi .cardSegunda .descripcion2 {
+      height: 30%;
+      width: 100%;
       text-align: center; }
+      .mainActi .cardSegunda .descripcion2 p {
+        font-size: 15px; }
+  .mainActi .cardTercera {
+    box-shadow: 5px 5px 10px black, -5px -5px 10px black; }
+    .mainActi .cardTercera:hover {
+      transform: scale(1.01); }
+    .mainActi .cardTercera .actiTres {
+      width: 100%;
+      height: 70%;
+      overflow: hidden; }
+      .mainActi .cardTercera .actiTres ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+        .mainActi .cardTercera .actiTres ul li {
+          width: 100%;
+          list-style: none; }
+          .mainActi .cardTercera .actiTres ul li img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill; }
+    .mainActi .cardTercera .descripcion3 {
+      height: 30%;
+      width: 100%;
+      text-align: center; }
+      .mainActi .cardTercera .descripcion3 p {
+        font-size: 15px; }
+  .mainActi .cardCuarta {
+    box-shadow: 5px 5px 10px black, -5px -5px 10px black; }
+    .mainActi .cardCuarta:hover {
+      transform: scale(1.01); }
+    .mainActi .cardCuarta .actiCuatro {
+      width: 100%;
+      height: 70%;
+      overflow: hidden; }
+      .mainActi .cardCuarta .actiCuatro ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+        .mainActi .cardCuarta .actiCuatro ul li {
+          width: 100%;
+          list-style: none; }
+          .mainActi .cardCuarta .actiCuatro ul li img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill; }
+    .mainActi .cardCuarta .descripcion4 {
+      height: 30%;
+      width: 100%;
+      text-align: center; }
+      .mainActi .cardCuarta .descripcion4 p {
+        font-size: 15px; }
+
+/*-----------------------------MEDIA QUERYS-------------------------------*/
+@media screen and (min-width: 700px) {
+  .mainActi {
+    background-color: red; } }
+
+@media screen and (min-width: 800px) {
+  .mainActi {
+    background-color: blue; } }
 
 /* diseño ubicacion*/
 .central {
