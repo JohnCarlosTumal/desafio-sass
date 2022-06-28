@@ -179,7 +179,7 @@
                     img {
                         height: 100%;
                         width: 100%;
-                        object-fit: fill;
+                        object-fit: cover;
                     }
                 }
             }
@@ -208,17 +208,43 @@
 
 /*-----------------------------MEDIA QUERYS-------------------------------*/
 
-@media screen and (min-width: 700px) {
 
-    .mainActi {
-        background-color: red;
-    }
-
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .mainActi{
-        background-color: blue;
+        padding: 10px 100px;
+        
+       
+
+        .cardPrimera{
+            display: flex;
+            align-items: center;
+        }
+
+        .cardSegunda{
+            display: flex;
+            align-items: center;
+        }
+
+        .cardTercera{
+            display: flex;
+            align-items: center;
+        }
+
+        .cardCuarta{
+            display: flex;
+            align-items: center;
+        }
     }
     
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .mainActi {
+        
+        padding: 10px 200px;
+        
+    }
+
 }

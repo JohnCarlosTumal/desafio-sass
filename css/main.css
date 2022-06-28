@@ -905,7 +905,7 @@ header .cabanias h3 {
           .mainActi .cardCuarta .actiCuatro ul li img {
             height: 100%;
             width: 100%;
-            object-fit: fill; }
+            object-fit: cover; }
     .mainActi .cardCuarta .descripcion4 {
       height: 30%;
       width: 100%;
@@ -914,13 +914,25 @@ header .cabanias h3 {
         font-size: 15px; }
 
 /*-----------------------------MEDIA QUERYS-------------------------------*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .mainActi {
-    background-color: red; } }
+    padding: 10px 100px; }
+    .mainActi .cardPrimera {
+      display: flex;
+      align-items: center; }
+    .mainActi .cardSegunda {
+      display: flex;
+      align-items: center; }
+    .mainActi .cardTercera {
+      display: flex;
+      align-items: center; }
+    .mainActi .cardCuarta {
+      display: flex;
+      align-items: center; } }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .mainActi {
-    background-color: blue; } }
+    padding: 10px 200px; } }
 
 /* diseño ubicacion*/
 .central {
