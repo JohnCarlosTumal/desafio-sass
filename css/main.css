@@ -519,8 +519,11 @@ footer {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "comida1 comida2" "comida3 comida4" "comida5 comida6" "bebida1 bebida2" "bebida3 bebida4" "bebida5 bebida6" "coctel1 coctel2" "coctel3 coctel4" "coctel5 coctel6"; }
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.3fr 1fr 1fr 1fr 0.3fr 1fr 1fr 1fr;
+    grid-template-areas: "food food" "comida1 comida2" "comida3 comida4" "comida5 comida6" "drinks drinks" "bebida1 bebida2" "bebida3 bebida4" "bebida5 bebida6" "coctel coctel" "coctel1 coctel2" "coctel3 coctel4" "coctel5 coctel6"; }
+    .comidas .food {
+      grid-area: food;
+      display: flex; }
     .comidas .comida1, .comidas .comida2, .comidas .comida3, .comidas .comida4, .comidas .comida5, .comidas .comida6, .comidas .bebida2, .comidas .bebida3, .comidas .bebida4, .comidas .bebida5, .comidas .bebida6, .comidas .coctel2, .comidas .coctel3, .comidas .coctel4, .comidas .coctel5, .comidas .coctel6 {
       grid-area: comida1;
       width: 95%; }
@@ -539,6 +542,8 @@ footer {
     .comidas .comida6 {
       grid-area: comida6;
       width: 95%; }
+    .comidas .drinks {
+      grid-area: drinks; }
     .comidas .bebida1 {
       grid-area: bebida1;
       width: 95%; }
@@ -557,6 +562,8 @@ footer {
     .comidas .bebida6 {
       grid-area: bebida6;
       width: 95%; }
+    .comidas .coctel {
+      grid-area: coctel; }
     .comidas .coctel1 {
       grid-area: coctel1;
       width: 95%; }
@@ -581,8 +588,10 @@ footer {
     padding: 20px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "comida1 comida2 comida3" "comida4 comida5 comida6" "bebida1 bebida2 bebida3" "bebida4 bebida5 bebida6" "coctel1 coctel2 coctel3" "coctel4 coctel5 coctel6"; }
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr;
+    grid-template-areas: "food food food" "comida1 comida2 comida3" "comida4 comida5 comida6" "drinks drinks drinks" "bebida1 bebida2 bebida3" "bebida4 bebida5 bebida6" "coctel coctel coctel" "coctel1 coctel2 coctel3" "coctel4 coctel5 coctel6"; }
+    .comidas .food {
+      grid-area: food; }
     .comidas .comida1, .comidas .comida2, .comidas .comida3, .comidas .comida4, .comidas .comida5, .comidas .comida6, .comidas .bebida2, .comidas .bebida3, .comidas .bebida4, .comidas .bebida5, .comidas .bebida6, .comidas .coctel2, .comidas .coctel3, .comidas .coctel4, .comidas .coctel5, .comidas .coctel6 {
       width: 95%; }
     .comidas .comida2 {
@@ -594,7 +603,12 @@ footer {
     .comidas .comida5 {
       width: 95%; }
     .comidas .comida6 {
-      width: 95%; } }
+      width: 95%; }
+    .comidas .drinks {
+      grid-area: drinks; }
+    .comidas .coctel {
+      grid-area: coctel;
+      width: 100%; } }
 
 /* -*-*--*-*-*-*-*---HOSPEDAJE --- *-*-*-*-**-*-*-**-- */
 /* section descripcion*/
@@ -944,15 +958,24 @@ header .cabanias h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 20px 50px; }
   .central .deskUbicacion {
     padding: 0px 150px 10px;
-    text-align: center; }
+    text-align: center;
+    padding: 0 50px 10px; }
   .central .imagenCinco {
     box-shadow: 5px 5px 10px black;
     border: 2px solid #24ab38;
-    width: 60%;
-    height: 80vh; }
+    width: 100%;
+    height: 50vh; }
     .central .imagenCinco iframe {
       width: 100%;
       height: 100%; }
+
+@media screen and (min-width: 1000px) {
+  .central {
+    padding: 20px 150px; }
+    .central .imagenCinco {
+      width: 100%;
+      height: 80vh; } }

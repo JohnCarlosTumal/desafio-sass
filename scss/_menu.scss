@@ -5,6 +5,9 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    
+    
+   
 
     nav {
         padding: 10px;
@@ -18,7 +21,6 @@
             li {
 
                 text-align: center;
-
 
                 a {
                     text-decoration: none;
@@ -60,7 +62,7 @@
         justify-content: center;
         border: 2px solid salmon;
         box-shadow: 5px 5px 10px rgb(70, 70, 70);
-        
+
 
         &:hover {
             transform: scale(1.01);
@@ -85,9 +87,9 @@
             width: 100%;
             height: 30%;
             text-align: center;
-            
 
-            h2{
+
+            h2 {
                 font-size: 20px;
             }
 
@@ -251,7 +253,7 @@
         justify-content: center;
         border: 2px solid salmon;
         box-shadow: 5px 5px 10px rgb(70, 70, 70);
-        
+
 
         &:hover {
             transform: scale(1.01);
@@ -276,9 +278,9 @@
             width: 100%;
             height: 30%;
             text-align: center;
-            
 
-            h2{
+
+            h2 {
                 font-size: 20px;
             }
 
@@ -442,7 +444,7 @@
         justify-content: center;
         border: 2px solid salmon;
         box-shadow: 5px 5px 10px rgb(70, 70, 70);
-        
+
 
         &:hover {
             transform: scale(1.01);
@@ -467,9 +469,9 @@
             width: 100%;
             height: 30%;
             text-align: center;
-            
 
-            h2{
+
+            h2 {
                 font-size: 20px;
             }
 
@@ -533,7 +535,7 @@
         .infCoctel3 {
             @extend .infComida1;
 
-           
+
 
             p {
                 text-align: justify;
@@ -631,13 +633,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ----------------------- MEDIA QUERYS -------------------*/
 
 @media screen and (min-width: 700px) {
@@ -648,21 +643,30 @@
         justify-items: center;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows:0.3fr 1fr 1fr 1fr 0.3fr 1fr 1fr 1fr 0.3fr 1fr 1fr 1fr;
 
-        grid-template-areas: "comida1 comida2"
+        grid-template-areas: "food food"
+            "comida1 comida2"
             "comida3 comida4"
             "comida5 comida6"
+            "drinks drinks"
             "bebida1 bebida2"
             "bebida3 bebida4"
             "bebida5 bebida6"
+            "coctel coctel"
             "coctel1 coctel2"
             "coctel3 coctel4"
             "coctel5 coctel6";
 
+        .food{
+            grid-area: food;
+            display: flex;
+            
+        }    
+
         .comida1 {
             grid-area: comida1;
-            width: 95%;            
+            width: 95%;
         }
 
         .comida2 {
@@ -690,9 +694,13 @@
             width: 95%;
         }
 
+        .drinks{
+            grid-area: drinks;
+        }
+
         .bebida1 {
             grid-area: bebida1;
-            width: 95%;            
+            width: 95%;
         }
 
         .bebida2 {
@@ -720,9 +728,13 @@
             width: 95%;
         }
 
+        .coctel{
+            grid-area: coctel;
+        }
+
         .coctel1 {
             grid-area: coctel1;
-            width: 95%;            
+            width: 95%;
         }
 
         .coctel2 {
@@ -758,21 +770,30 @@
 @media screen and (min-width: 1200px) {
     .comidas {
         padding: 20px 100px;
-        
+
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr;
 
-        grid-template-areas: "comida1 comida2 comida3"
-        "comida4 comida5 comida6"
-        "bebida1 bebida2 bebida3"
-        "bebida4 bebida5 bebida6"
-        "coctel1 coctel2 coctel3"
-        "coctel4 coctel5 coctel6";
+        grid-template-areas: 
+            "food food food"
+            "comida1 comida2 comida3"
+            "comida4 comida5 comida6"
+            "drinks drinks drinks"
+            "bebida1 bebida2 bebida3"
+            "bebida4 bebida5 bebida6"
+            "coctel coctel coctel"
+            "coctel1 coctel2 coctel3"
+            "coctel4 coctel5 coctel6";
+
+
+            .food{
+                grid-area: food;
+            }
 
         .comida1 {
             width: 95%;
-            
+
         }
 
         .comida2 {
@@ -793,6 +814,15 @@
 
         .comida6 {
             width: 95%;
+        }
+
+        .drinks{
+            grid-area: drinks;
+        }
+
+        .coctel{
+            grid-area: coctel;
+            width: 100%;
         }
     }
 }
