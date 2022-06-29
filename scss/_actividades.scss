@@ -155,7 +155,7 @@
 
     .cardCuarta {
         box-shadow: 5px 5px 10px black, -5px -5px 10px black;
-        
+
         &:hover {
             transform: scale(1.01);
         }
@@ -210,41 +210,47 @@
 
 
 @media screen and (min-width: 900px) {
-    .mainActi{
+    .mainActi {
         padding: 10px 100px;
-        
-       
 
-        .cardPrimera{
+
+
+        .cardPrimera {
+            display: flex;
+            align-items: center;
+            padding: 0px 15px;
+        }
+
+        .cardSegunda {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .cardTercera {
             display: flex;
             align-items: center;
         }
 
-        .cardSegunda{
+        .cardCuarta {
             display: flex;
             align-items: center;
-        }
-
-        .cardTercera{
-            display: flex;
-            align-items: center;
-        }
-
-        .cardCuarta{
-            display: flex;
-            align-items: center;
+            flex-direction: row-reverse;
         }
     }
-    
-}
 
+}
 
 @media screen and (min-width: 1200px) {
 
+    .sectionMenu {
+        padding: 10px 400px 10px;
+    }
+
     .mainActi {
-        
-        padding: 10px 200px;
-        
+
+        padding: 10px 200px 50px;
+
     }
 
 }

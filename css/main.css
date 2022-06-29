@@ -919,20 +919,25 @@ header .cabanias h3 {
     padding: 10px 100px; }
     .mainActi .cardPrimera {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      padding: 0px 15px; }
     .mainActi .cardSegunda {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-direction: row-reverse; }
     .mainActi .cardTercera {
       display: flex;
       align-items: center; }
     .mainActi .cardCuarta {
       display: flex;
-      align-items: center; } }
+      align-items: center;
+      flex-direction: row-reverse; } }
 
 @media screen and (min-width: 1200px) {
+  .sectionMenu {
+    padding: 10px 400px 10px; }
   .mainActi {
-    padding: 10px 200px; } }
+    padding: 10px 200px 50px; } }
 
 /* diseño ubicacion*/
 .central {
