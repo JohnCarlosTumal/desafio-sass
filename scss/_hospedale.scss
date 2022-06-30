@@ -212,6 +212,15 @@ header {
 
 @media screen and (max-width: 1200px) {
 
+   .mainHospedaje{
+    
+    padding: 10px 50px;
+
+    .cardUno{
+        align-items: center;
+    }
+   }
+   
     .imgCabu {
         width: 100%;
     }
@@ -223,22 +232,26 @@ header {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
     .mainHospedaje {
+        
 
         .cardUno {
             flex-direction: column;
 
             .imgCabu {
+                width: 100%;
 
 
 
                 #carouselExampleFade {
+                    align-items: center;
+                    justify-content: center;
 
 
                     .carousel-inner {
-
+                       
 
 
                         .carousel-item {
@@ -260,6 +273,7 @@ header {
             flex-direction: column-reverse;
 
             .imgCabd {
+                width: 100%;
 
                 #carouselExampleFade {
 
@@ -283,6 +297,10 @@ header {
 
         .cardTres {
             flex-direction: column;
+
+            .imgCabt{
+                width: 100%;
+            }
         }
 
 
@@ -293,12 +311,14 @@ header {
 
 @media screen and (max-width: 600px) {
 
+    
     .descripcion {
         padding: 5px 15px 0px;
     }
 
     .mainHospedaje {
         padding: 10px;
+        
 
         .imgCabu {
             width: 100%;
